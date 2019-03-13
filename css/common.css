@@ -1,0 +1,60 @@
+body {
+    font-family: OpenSans,
+        Arial,
+        Helvetica,
+        sans-serif;
+    color: #333333;
+}
+
+button {
+    border: unset;
+    outline: unset;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: unset;
+}
+
+button.theme-btn {
+    box-sizing: border-box;
+    height: 55px;
+    padding: 1.4em 4.2em;
+    background-color: #df6928;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #fff;
+}
+
+main {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+main>section {
+    max-width: 1372px;
+}
+
+.section-title {
+    margin: 90px 0 40px;
+    text-align: center;
+    text-transform: uppercase;
+    font: bold 45px/1.1 Montserrat;
+    font-weight: bold;
+}
+
+.section-description {
+    margin: 0 auto 50px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.3;
+}
+
+.section-note {
+    margin: 50px 0 60px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.3;
+}

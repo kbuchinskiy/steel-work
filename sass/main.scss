@@ -1,0 +1,205 @@
+/* technology1 */
+#technology1 {
+    .content-wrapper {
+        display: flex;
+        align-items: flex-start;
+
+        .description-block {
+            flex: 1;
+
+            .description {
+                font-size: 18px;
+                line-height: 1.4;
+                margin-bottom: 40px;
+            }
+        }
+
+        .illustration-block {
+            flex: 1;
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+
+            figure {
+                position: relative;
+                width: 612px;
+                height: 305px;
+
+                img {
+                    width: 100%;
+                }
+
+                .caption-container {
+                    position: absolute;
+
+                    &.caption-container-1 {
+                        top: 34px;
+                        left: 60px;
+
+                        .toogle-caption-btn {
+                            top: 2px;
+                            left: 170px;
+                        }
+                    }
+
+                    &.caption-container-2 {
+                        top: 210px;
+                        left: 400px;
+
+                        .toogle-caption-btn {
+                            top: 12px;
+                            left: -50px;
+                        }
+                    }
+
+                    h4 {
+                        margin-bottom: 5px;
+                        text-transform: uppercase;
+                        font-size: 16px;
+                        font-weight: bold;
+                        color: #1d1d20;
+                    }
+
+                    p {
+                        font-size: 14px;
+                        line-height: 1.2;
+                    }
+                }
+
+                .toogle-caption-btn {
+                    display: flex;
+                    position: absolute;
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 50%;
+                    background-color: #f7f7f7;
+                    font-weight: 100;
+
+                    &::before,
+                    &::after {
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        content: '';
+                        display: block;
+                        height: 1px;
+                        width: 20px;
+                        background-color: #000;
+                    }
+
+                    &::after {
+                        height: 20px;
+                        width: 1px;
+                        margin-top: -10px;
+                    }
+
+                    &::before {
+                        margin-left: -10px;
+                    }
+
+                    &.active {
+                        background-color: #df6928;
+                    }
+
+                    &.active::before,
+                    &.active::after {
+                        background-color: #fff;
+                    }
+
+                }
+
+            }
+        }
+    }
+
+    .section-description {
+        max-width: 1040px;
+    }
+
+    .items-container {
+        display: flex;
+        justify-content: space-between;
+
+        .item {
+            width: 30.8%;
+            height: 360px;
+
+            figure {
+                overflow: hidden;
+                position: relative;
+                border-radius: 5px;
+
+                img {
+                    width: 100%;
+                    height: auto;
+                }
+
+                figcaption {
+                    overflow: hidden;
+                    position: absolute;
+                    left: 0;
+                    bottom: 0;
+                    box-sizing: border-box;
+                    padding: 30px;
+                    width: 100%;
+                    min-height: 46%;
+                    border-radius: 5px;
+                    background-color: rgba(255, 255, 255, 0.8);
+
+                    h4 {
+                        margin-bottom: 10px;
+                        text-transform: uppercase;
+                        font-size: 20px;
+                        font-weight: bold;
+                        color: #1d1d20;
+                    }
+
+                    p {
+                        font-size: 18px;
+                        line-height: 1.2;
+
+                        &::after {
+                            position: absolute;
+                            left: 0;
+                            bottom: 0;
+                            height: 100%;
+                            width: 100%;
+                            content: "";
+                            background: linear-gradient(rgba(255, 255, 255, 0) 00%,
+                                rgba(255, 255, 255, 1) 80%);
+                            pointer-events: none;
+
+                        }
+
+                    }
+
+                    .read-more-btn {
+                        position: absolute;
+                        top: 70%;
+                        left: 50%;
+                        margin-left: -65px;
+                        width: 130px;
+                        text-align: center;
+                        color: #df6928;
+                        font-size: 14px;
+                        font-weight: bold;
+                    }
+                }
+
+            }
+        }
+
+
+    }
+
+
+
+    .theme-btn[data-action='open-catalog'] {
+        display: block;
+        margin: 0 auto;
+    }
+
+
+}
+
+/* technology1 END*/

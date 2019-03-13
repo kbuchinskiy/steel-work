@@ -1,0 +1,22 @@
+{
+  "name": "steel-work",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "sass": "node-sass -w sass -o css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kbuchinskiy/steel-work.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kbuchinskiy/steel-work/issues"
+  },
+  "homepage": "https://github.com/kbuchinskiy/steel-work#readme",
+  "dependencies": {
+    "node-sass": "^4.11.0"
+  }
+}
