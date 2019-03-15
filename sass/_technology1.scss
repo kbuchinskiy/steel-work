@@ -1,4 +1,3 @@
-/* technology1 */
 #technology1 {
     .content-wrapper {
         .description-block {
@@ -94,7 +93,7 @@
                     }
 
                     &.active {
-                        background-color: #df6928;
+                        background-color: #f4732c;
                     }
 
                     &.active::before,
@@ -178,8 +177,8 @@
                         margin-left: -65px;
                         width: 130px;
                         text-align: center;
-                        color: #df6928;
-                        font-size: 14px;
+                        color: #f4732c;
+                        font-size: 14px; 
                         font-weight: bold;
                         z-index: 1;
 
@@ -203,110 +202,4 @@
         display: block;
         margin: 0 auto;
     }
-}
-
-/* technology2 */
-#technology2 {
-    background-color: #f7f7f7;
-
-    .section-title {
-        max-width: 900px;
-    }
-
-    .section-description {
-        max-width: 1180px;
-    }
-
-    .content-wrapper {
-        .illustration-block {
-            figure {
-                position: relative;
-                display: flex;
-                align-items: flex-start;
-
-                .frame {}
-
-                .line {
-                    margin-top: 60px;
-                }
-
-                figcaption {
-                    position: absolute;
-                    top: 50px;
-                    left: 160px;
-                    max-width: 320px;
-                    color: #fff;
-                    line-height: 24px;
-
-                }
-            }
-        }
-
-        .description-block {
-            display: flex;
-            flex-flow: column;
-            align-items: center;
-            margin-left: 20px;
-
-            .text-1 {
-                position: relative;
-                max-width: 500px;
-                margin: 48px 0;
-
-                &::before,
-                &::after {
-                    content: '';
-                    position: absolute;
-                    top: 0;
-                    left: 50%;
-                    display: block;
-                    width: 14px;
-                    height: 10px;
-                    margin-left: -7px;
-                }
-
-                &::before {
-                    top: -35px;
-                    background: url(../images/arrow2.png) center/contain no-repeat;
-                }
-
-                &::after {
-                    top: 66px;
-                    background: url(../images/arrow3.png) center/contain no-repeat;
-                }
-            }
-
-            .text-2 {
-                max-width: 400px;
-                margin-bottom: 28px;
-                font-size: 14px;
-                text-align: center;
-            }
-        }
-    }
-}
-
-/* technology2 END*/
-#responsibilities {
-    background-color: #f7f7f7;
-
-    .section-description {
-        max-width: 1080px;
-    }
-
-    .items-container {
-        justify-content: center;
-        align-items: baseline;
-
-        .item {
-            width: 360px;
-            margin-bottom: 30px;
-
-            figure {
-                img {
-                    margin-bottom: 10px;
-                }
-            }
-        }
-    }
-}
+} 

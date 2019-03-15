@@ -1,4 +1,60 @@
-/* technology1 */
+body {
+  font-family: OpenSans, Arial, Helvetica, sans-serif;
+  color: #333333;
+  font-size: 18px;
+  line-height: 1.3; }
+
+a {
+  text-decoration: unset; }
+
+button {
+  border: unset;
+  outline: unset;
+  cursor: pointer; }
+
+button.theme-btn {
+  box-sizing: border-box;
+  height: 55px;
+  padding: 1.4em 4.2em;
+  background-color: #f4732c;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-size: 14px;
+  color: #fff; }
+
+main > section {
+  width: 100%;
+  padding-bottom: 100px; }
+
+main > section > .layout-wrapper {
+  overflow: auto;
+  max-width: 1372px;
+  margin: 0 auto; }
+
+.content-wrapper {
+  display: flex;
+  align-items: flex-start; }
+
+.items-container {
+  display: flex;
+  align-items: flex-start;
+  flex-flow: row wrap; }
+
+.section-title {
+  margin: 90px auto 40px;
+  text-align: center;
+  text-transform: uppercase;
+  font: bold 45px/1.1 Montserrat;
+  font-weight: bold; }
+
+.section-description {
+  margin: 0 auto 50px;
+  text-align: center; }
+
+.section-note {
+  margin: 50px 0 60px;
+  text-align: center; }
+
 #technology1 .content-wrapper .description-block {
   flex: 1; }
   #technology1 .content-wrapper .description-block .description {
@@ -63,7 +119,7 @@
       #technology1 .content-wrapper .illustration-block figure .toogle-caption-btn::before {
         margin-left: -10px; }
       #technology1 .content-wrapper .illustration-block figure .toogle-caption-btn.active {
-        background-color: #df6928; }
+        background-color: #f4732c; }
       #technology1 .content-wrapper .illustration-block figure .toogle-caption-btn.active::before, #technology1 .content-wrapper .illustration-block figure .toogle-caption-btn.active::after {
         background-color: #fff; }
 
@@ -121,7 +177,7 @@
           margin-left: -65px;
           width: 130px;
           text-align: center;
-          color: #df6928;
+          color: #f4732c;
           font-size: 14px;
           font-weight: bold;
           z-index: 1; }
@@ -137,7 +193,6 @@
   display: block;
   margin: 0 auto; }
 
-/* technology2 */
 #technology2 {
   background-color: #f7f7f7; }
   #technology2 .section-title {
@@ -187,7 +242,6 @@
       font-size: 14px;
       text-align: center; }
 
-/* technology2 END*/
 #responsibilities {
   background-color: #f7f7f7; }
   #responsibilities .section-description {
@@ -200,3 +254,69 @@
       margin-bottom: 30px; }
       #responsibilities .items-container .item figure img {
         margin-bottom: 10px; }
+
+#advantages .section-title {
+  max-width: 950px; }
+
+#advantages .section-description {
+  max-width: 1080px;
+  margin-bottom: 100px; }
+
+#advantages .items-container {
+  justify-content: space-between;
+  align-items: baseline;
+  box-sizing: border-box;
+  padding: 0 15px; }
+  #advantages .items-container .item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 23.5%;
+    min-height: 175px;
+    background-color: #f4732c;
+    border-radius: 10px; }
+    #advantages .items-container .item .number-circle {
+      display: flex;
+      box-sizing: border-box;
+      width: 106px;
+      height: 106px;
+      margin: -53px 0 30px;
+      background: #fff;
+      border: 5px solid #f4732c;
+      border-radius: 50%; }
+      #advantages .items-container .item .number-circle span {
+        margin: auto;
+        font: bold 45px Montserrat;
+        color: #0d0d0d; }
+    #advantages .items-container .item p {
+      text-align: center;
+      color: #fff; }
+
+#question {
+  background-color: #f7f7f7; }
+  #question form .items-container {
+    justify-content: space-between;
+    align-items: baseline;
+    box-sizing: border-box;
+    padding: 0 15px; }
+    #question form .items-container .item {
+      width: 23.5%; }
+      #question form .items-container .item input {
+        display: block;
+        box-sizing: border-box;
+        width: 90%;
+        min-height: 60px;
+        padding: 0 0 0 7%;
+        border: 1px solid #bababa;
+        border-radius: 5px;
+        background: #f7f7f7; }
+      #question form .items-container .item input[type=submit] {
+        padding: 0;
+        text-align: center;
+        border-radius: 5px;
+        border: unset;
+        background-color: #f4732c;
+        text-transform: uppercase;
+        font-size: 14px;
+        color: #fff; }
