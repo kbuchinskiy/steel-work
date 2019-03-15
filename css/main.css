@@ -1,74 +1,74 @@
 /* technology1 */
-#technology1 .content-wrapper {
+#technology1 .content-wrapper .description-block {
+  flex: 1; }
+  #technology1 .content-wrapper .description-block .description {
+    line-height: 1.4;
+    margin-bottom: 40px; }
+
+#technology1 .content-wrapper .illustration-block {
+  flex: 1;
   display: flex;
-  align-items: flex-start; }
-  #technology1 .content-wrapper .description-block {
-    flex: 1; }
-    #technology1 .content-wrapper .description-block .description {
-      font-size: 18px;
-      line-height: 1.4;
-      margin-bottom: 40px; }
-  #technology1 .content-wrapper .illustration-block {
-    flex: 1;
-    display: flex;
-    align-items: flex-end;
-    justify-content: center; }
-    #technology1 .content-wrapper .illustration-block figure {
-      position: relative;
-      width: 612px;
-      height: 305px; }
-      #technology1 .content-wrapper .illustration-block figure img {
-        width: 100%; }
-      #technology1 .content-wrapper .illustration-block figure .caption-container {
-        position: absolute; }
-        #technology1 .content-wrapper .illustration-block figure .caption-container.caption-container-1 {
-          top: 34px;
-          left: 60px; }
-          #technology1 .content-wrapper .illustration-block figure .caption-container.caption-container-1 .toogle-caption-btn {
-            top: 2px;
-            left: 170px; }
-        #technology1 .content-wrapper .illustration-block figure .caption-container.caption-container-2 {
-          top: 210px;
-          left: 400px; }
-          #technology1 .content-wrapper .illustration-block figure .caption-container.caption-container-2 .toogle-caption-btn {
-            top: 12px;
-            left: -50px; }
-        #technology1 .content-wrapper .illustration-block figure .caption-container h4 {
-          margin-bottom: 5px;
-          text-transform: uppercase;
-          font-size: 16px;
-          font-weight: bold;
-          color: #1d1d20; }
-        #technology1 .content-wrapper .illustration-block figure .caption-container p {
-          font-size: 14px;
-          line-height: 1.2; }
-      #technology1 .content-wrapper .illustration-block figure .toogle-caption-btn {
-        display: flex;
+  align-items: flex-end;
+  justify-content: center; }
+  #technology1 .content-wrapper .illustration-block figure {
+    position: relative;
+    width: 612px;
+    height: 305px; }
+    #technology1 .content-wrapper .illustration-block figure img {
+      width: 100%; }
+    #technology1 .content-wrapper .illustration-block figure .caption-container {
+      position: absolute; }
+      #technology1 .content-wrapper .illustration-block figure .caption-container.caption-container-1 {
+        top: 34px;
+        left: 60px; }
+        #technology1 .content-wrapper .illustration-block figure .caption-container.caption-container-1 .toogle-caption-btn {
+          top: 2px;
+          left: 170px; }
+      #technology1 .content-wrapper .illustration-block figure .caption-container.caption-container-2 {
+        top: 210px;
+        left: 400px; }
+        #technology1 .content-wrapper .illustration-block figure .caption-container.caption-container-2 .toogle-caption-btn {
+          top: 12px;
+          left: -50px; }
+      #technology1 .content-wrapper .illustration-block figure .caption-container h4 {
+        margin-bottom: 5px;
+        text-transform: uppercase;
+        font-size: 16px;
+        font-weight: bold;
+        color: #1d1d20; }
+      #technology1 .content-wrapper .illustration-block figure .caption-container p {
+        font-size: 14px;
+        line-height: 1.2; }
+    #technology1 .content-wrapper .illustration-block figure .toogle-caption-btn {
+      display: flex;
+      position: absolute;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background-color: #f7f7f7;
+      font-weight: 100; }
+      #technology1 .content-wrapper .illustration-block figure .toogle-caption-btn::before, #technology1 .content-wrapper .illustration-block figure .toogle-caption-btn::after {
         position: absolute;
-        width: 40px;
-        height: 40px;
-        border-radius: 50%;
-        background-color: #f7f7f7;
-        font-weight: 100; }
-        #technology1 .content-wrapper .illustration-block figure .toogle-caption-btn::before, #technology1 .content-wrapper .illustration-block figure .toogle-caption-btn::after {
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          content: '';
-          display: block;
-          height: 1px;
-          width: 20px;
-          background-color: #000; }
-        #technology1 .content-wrapper .illustration-block figure .toogle-caption-btn::after {
-          height: 20px;
-          width: 1px;
-          margin-top: -10px; }
-        #technology1 .content-wrapper .illustration-block figure .toogle-caption-btn::before {
-          margin-left: -10px; }
-        #technology1 .content-wrapper .illustration-block figure .toogle-caption-btn.active {
-          background-color: #df6928; }
-        #technology1 .content-wrapper .illustration-block figure .toogle-caption-btn.active::before, #technology1 .content-wrapper .illustration-block figure .toogle-caption-btn.active::after {
-          background-color: #fff; }
+        top: 50%;
+        left: 50%;
+        content: '';
+        display: block;
+        height: 1px;
+        width: 20px;
+        background-color: #000; }
+      #technology1 .content-wrapper .illustration-block figure .toogle-caption-btn::after {
+        height: 20px;
+        width: 1px;
+        margin-top: -10px; }
+      #technology1 .content-wrapper .illustration-block figure .toogle-caption-btn::before {
+        margin-left: -10px; }
+      #technology1 .content-wrapper .illustration-block figure .toogle-caption-btn.active {
+        background-color: #df6928; }
+      #technology1 .content-wrapper .illustration-block figure .toogle-caption-btn.active::before, #technology1 .content-wrapper .illustration-block figure .toogle-caption-btn.active::after {
+        background-color: #fff; }
+
+#technology1 .section-title {
+  max-width: 1040px; }
 
 #technology1 .section-description {
   max-width: 1040px; }
@@ -97,6 +97,15 @@
         min-height: 46%;
         border-radius: 5px;
         background-color: rgba(255, 255, 255, 0.8); }
+        #technology1 .items-container .item figure figcaption::after {
+          position: absolute;
+          left: 0;
+          bottom: 0;
+          height: 100%;
+          width: 100%;
+          content: "";
+          background: linear-gradient(rgba(255, 255, 255, 0) 0%, white 80%);
+          pointer-events: none; }
         #technology1 .items-container .item figure figcaption h4 {
           margin-bottom: 10px;
           text-transform: uppercase;
@@ -104,17 +113,7 @@
           font-weight: bold;
           color: #1d1d20; }
         #technology1 .items-container .item figure figcaption p {
-          font-size: 18px;
           line-height: 1.2; }
-          #technology1 .items-container .item figure figcaption p::after {
-            position: absolute;
-            left: 0;
-            bottom: 0;
-            height: 100%;
-            width: 100%;
-            content: "";
-            background: linear-gradient(rgba(255, 255, 255, 0) 0%, white 80%);
-            pointer-events: none; }
         #technology1 .items-container .item figure figcaption .read-more-btn {
           position: absolute;
           top: 70%;
@@ -124,10 +123,80 @@
           text-align: center;
           color: #df6928;
           font-size: 14px;
-          font-weight: bold; }
+          font-weight: bold;
+          z-index: 1; }
+          #technology1 .items-container .item figure figcaption .read-more-btn::before {
+            content: '';
+            display: inline-block;
+            width: 9px;
+            height: 10px;
+            margin-right: 5px;
+            background: url(../images/arrow1.png) center/contain no-repeat; }
 
 #technology1 .theme-btn[data-action='open-catalog'] {
   display: block;
   margin: 0 auto; }
 
-/* technology1 END*/
+/* technology2 */
+#technology2 {
+  background-color: #f7f7f7; }
+  #technology2 .section-title {
+    max-width: 900px; }
+  #technology2 .section-description {
+    max-width: 1180px; }
+  #technology2 .content-wrapper .illustration-block figure {
+    position: relative;
+    display: flex;
+    align-items: flex-start; }
+    #technology2 .content-wrapper .illustration-block figure .line {
+      margin-top: 60px; }
+    #technology2 .content-wrapper .illustration-block figure figcaption {
+      position: absolute;
+      top: 50px;
+      left: 160px;
+      max-width: 320px;
+      color: #fff;
+      line-height: 24px; }
+  #technology2 .content-wrapper .description-block {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    margin-left: 20px; }
+    #technology2 .content-wrapper .description-block .text-1 {
+      position: relative;
+      max-width: 500px;
+      margin: 48px 0; }
+      #technology2 .content-wrapper .description-block .text-1::before, #technology2 .content-wrapper .description-block .text-1::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 50%;
+        display: block;
+        width: 14px;
+        height: 10px;
+        margin-left: -7px; }
+      #technology2 .content-wrapper .description-block .text-1::before {
+        top: -35px;
+        background: url(../images/arrow2.png) center/contain no-repeat; }
+      #technology2 .content-wrapper .description-block .text-1::after {
+        top: 66px;
+        background: url(../images/arrow3.png) center/contain no-repeat; }
+    #technology2 .content-wrapper .description-block .text-2 {
+      max-width: 400px;
+      margin-bottom: 28px;
+      font-size: 14px;
+      text-align: center; }
+
+/* technology2 END*/
+#responsibilities {
+  background-color: #f7f7f7; }
+  #responsibilities .section-description {
+    max-width: 1080px; }
+  #responsibilities .items-container {
+    justify-content: center;
+    align-items: baseline; }
+    #responsibilities .items-container .item {
+      width: 360px;
+      margin-bottom: 30px; }
+      #responsibilities .items-container .item figure img {
+        margin-bottom: 10px; }
