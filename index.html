@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
+    <link rel="stylesheet" href="slick/slick-theme.css">
+    <link rel="stylesheet" href="slick/slick.css">
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/imports.css">
 
@@ -14,6 +15,35 @@
 
 <body>
     <main>
+        <header class="header">
+            <div class="layout-wrapper">
+                <div class="header__inner container">
+                    <div class="logo">
+                        <a class="logo__link" href="index.html">
+                            <img class="logo__image" src="images/logo.png" alt="Steel Work">
+                        </a>
+                    </div>
+                    <nav class="menu menu--hamburger js-menu">
+                        <div class="hamburger hamburger--elastic js-menu__hamburger">
+                            <div class="hamburger-box">
+                                <div class="hamburger-inner"></div>
+                            </div>
+                        </div>
+                        <ul class="menu__list">
+                            <li class="menu__item"><a class="menu__link" href="#">Главная</a></li>
+                            <li class="menu__item"><a class="menu__link" href="#">Услуги</a></li>
+                            <li class="menu__item menu-item"><a class="menu__link" href="#">Продукция</a></li>
+                            <li class="menu__item menu-item"><a class="menu__link" href="#">О Компании</a></li>
+                            <li class="menu__item"><a class="menu__link" href="#">Контакты</a></li>
+                        </ul>
+                    </nav>
+                    <div class="callback"><a class="callback__link" href="tel:380564701400">
+                            +38 (056) 470-17-00</a>
+                        <button class="theme-btn">Заказать звонок</button>
+                    </div>
+                </div>
+            </div>
+        </header>
         <section id="technology1">
             <div class="layout-wrapper">
                 <h2 class="section-title">Биметалл SWIP по технологии наплавки</h2>
@@ -53,6 +83,10 @@
                         </figure>
                     </div>
                 </div>
+            </div>
+        </section>
+        <section id="technology1Features">
+            <div class="layout-wrapper">
                 <h2 class="section-title">Особенности производства листов SWIP по технологии наплавки</h2>
                 <p class="section-description">
                     Максимальная износостойкость достигается за счет применения собственной запатентованной
@@ -168,7 +202,7 @@
                 <div class="items-container">
                     <div class="item">
                         <figure>
-                            <img src="images/icon1.png" alt="">
+                            <img src="images/icon1.png" alt="Иконка">
                             <figcaption>
                                 Защита оборудования<br>
                                 от любого вида износа
@@ -177,7 +211,7 @@
                     </div>
                     <div class="item">
                         <figure>
-                            <img src="images/icon2.png" alt="">
+                            <img src="images/icon2.png" alt="Иконка">
                             <figcaption>
                                 Увеличение срока службы<br>
                                 оборудования в 4 раза
@@ -186,7 +220,7 @@
                     </div>
                     <div class="item">
                         <figure>
-                            <img src="images/icon3.png" alt="">
+                            <img src="images/icon3.png" alt="Иконка">
                             <figcaption>
                                 Уменьшение веса<br>
                                 футеровки до 50%
@@ -195,7 +229,7 @@
                     </div>
                     <div class="item">
                         <figure>
-                            <img src="images/icon4.png" alt="">
+                            <img src="images/icon4.png" alt="Иконка">
                             <figcaption>
                                 Сокращение затрат на ремонтные<br>
                                 работы и обслуживание
@@ -204,7 +238,7 @@
                     </div>
                     <div class="item">
                         <figure>
-                            <img src="images/icon5.png" alt="">
+                            <img src="images/icon5.png" alt="Иконка">
                             <figcaption>
                                 Уменьшение операционных<br>
                                 затрат на содержание оборудования
@@ -213,7 +247,7 @@
                     </div>
                     <div class="item">
                         <figure>
-                            <img src="images/icon6.png" alt="">
+                            <img src="images/icon6.png" alt="Иконка">
                             <figcaption>
                                 Снижение себестоимости<br>
                                 продукции
@@ -222,7 +256,7 @@
                     </div>
                     <div class="item">
                         <figure>
-                            <img src="images/icon7.png" alt="">
+                            <img src="images/icon7.png" alt="Иконка">
                             <figcaption>
                                 Повышение производительности<br>
                                 оборудования
@@ -231,7 +265,7 @@
                     </div>
                     <div class="item">
                         <figure>
-                            <img src="images/icon8.png" alt="">
+                            <img src="images/icon8.png" alt="Иконка">
                             <figcaption>
                                 Отсутствие длительных<br>
                                 простоев производства
@@ -240,7 +274,7 @@
                     </div>
                     <div class="item">
                         <figure>
-                            <img src="images/icon9.png" alt="">
+                            <img src="images/icon9.png" alt="Иконка">
                             <figcaption>
                                 Отсутствие необходимости в<br>
                                 приобретении нового оборудования
@@ -308,14 +342,231 @@
                     <div class="items-container">
                         <div class="item"><input type="text" name="name" placeholder="Имя"></div>
                         <div class="item"><input type="tel" name="phone" placeholder="Телефон"></div>
-                        <div class="item"><input type="text" name="country" placeholder="Выберите страну"></div>
+                        <div class="item">
+                            <select>
+                                <option selected>Москва</option>
+                                <option>Казань</option>
+                                <option>Новосибирск</option>
+                            </select>
+                        </div>
                         <div class="item"><input class="theme-btn" type="submit" value="ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ"></div>
                     </div>
                 </form>
-
             </div>
         </section>
+        <section id="segments">
+            <div class="layout-wrapper">
+                <h2 class="section-title">В каких сферах применяются
+                    биметаллические листы SWIP?</h2>
+                <p class="section-description">
+                    Области применения биметалла самые разные. Данный материал позволет предприятиям защитить
+                    производственное оборудование или оборудование на инжиниринговом обслуживании, подвергшееся износу,
+                    и нуждающееся в увеличении срока эксплуатации. Биметалл активно используется при изготовлении
+                    реакторов, колон, теплообменного оборудования и различных ёмкостей.
+                </p>
+                <div class="items-container">
+                    <div class="item">
+                        <figure class="item">
+                            <img src="images/segment1.png" alt="Изображение сегмента">
+                            <figcaption>
+                                <p>Горнодобывающая промышленость</p>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="item">
+                        <figure class="item">
+                            <img src="images/segment2.png" alt="Изображение сегмента">
+                            <figcaption>
+                                <p>Металлургическая промышленость</p>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="item">
+                        <figure class="item">
+                            <img src="images/segment3.png" alt="Изображение сегмента">
+                            <figcaption>
+                                <p>Цементная промышленость</p>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="item">
+                        <figure class="item">
+                            <img src="images/segment4.png" alt="Изображение сегмента">
+                            <figcaption>
+                                <p>Пищевая промышленость</p>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="item">
+                        <figure class="item">
+                            <img src="images/segment5.png" alt="Изображение сегмента">
+                            <figcaption>
+                                <p>Химическая промышленость</p>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="item">
+                        <figure class="item">
+                            <img src="images/segment6.png" alt="Изображение сегмента">
+                            <figcaption>
+                                <p>Энергетическая промышленость</p>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="item">
+                        <figure class="item">
+                            <img src="images/segment7.png" alt="Изображение сегмента">
+                            <figcaption>
+                                <p>Портовое хозяйство</p>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="item">
+                        <figure class="item">
+                            <img src="images/segment8.png" alt="Изображение сегмента">
+                            <figcaption>
+                                <p>Портовое хозяйство</p>
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="achievements">
+            <div class="layout-wrapper">
+                <h2 class="section-title">Результаты наших клиентов</h2>
+                <p class="section-description">
+                    За 12 лет своего существования компания накопила бесценный опыт в области повышения ресурса
+                    технологического оборудования и зарекомендовала себя как надежный партнер. Экспертные знания и
+                    навыки
+                    специалистов компании позволили нашим клиентам сделать производство более эффективным и успешным.
+                </p>
+                <div id="slider" class="regular slider">
+                    <div>
+                        <figure>
+                            <img class="cover-img" src="images/achievement1.png" alt="Фоновое изображение">
+                            <img class="logo" src="images/company-logo.png" alt="Логотип компании">
+                            <figcaption>Череповецкий металлургический
+                                комбинат увеличил межремонтный
+                                период в 4 раза за счет установки
+                                элементов аспирационной системы,
+                                изготовленных из биметаллических
+                                листов SWIP
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div>
+                        <figure>
+                            <img class="cover-img" src="images/achievement2.png" alt="Фоновое изображение">
+                            <img class="logo" src="images/company-logo.png" alt="Логотип компании">
+                            <figcaption>Череповецкий металлургический
+                                комбинат увеличил межремонтный
+                                период в 4 раза за счет установки
+                                элементов аспирационной системы,
+                                изготовленных из биметаллических
+                                листов SWIP
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div>
+                        <figure>
+                            <img class="cover-img" src="images/achievement3.png" alt="Фоновое изображение">
+                            <img class="logo" src="images/company-logo.png" alt="Логотип компании">
+                            <figcaption>Череповецкий металлургический
+                                комбинат увеличил межремонтный
+                                период в 4 раза за счет установки
+                                элементов аспирационной системы,
+                                изготовленных из биметаллических
+                                листов SWIP
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div>
+                        <figure>
+                            <img class="cover-img" src="images/achievement1.png" alt="Фоновое изображение">
+                            <img class="logo" src="images/company-logo.png" alt="Логотип компании">
+                            <figcaption>Череповецкий металлургический
+                                комбинат увеличил межремонтный
+                                период в 4 раза за счет установки
+                                элементов аспирационной системы,
+                                изготовленных из биметаллических
+                                листов SWIP
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div>
+                        <figure>
+                            <img class="cover-img" src="images/achievement2.png" alt="Фоновое изображение">
+                            <img class="logo" src="images/company-logo.png" alt="Логотип компании">
+                            <figcaption>Череповецкий металлургический
+                                комбинат увеличил межремонтный
+                                период в 4 раза за счет установки
+                                элементов аспирационной системы,
+                                изготовленных из биметаллических
+                                листов SWIP
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="map">
+            <div class="layout-wrapper">
+                <h2 class="section-title">В каких странах мы работаем?</h2>
+                <p class="section-description">
+                    Использование в своей деятельности передовых технологий и последних научных разработок
+                    позволило нам в короткие сроки выйти на международный рынок. Сегодня наши клиенты находятся
+                    в более чем 10 странах по всему миру, и география постоянно расширяется.
+                </p>
+                <img class="map" src="images/map.png" alt="Изображение карты">
+            </div>
+        </section>
+        <section id="contact">
+            <div class="layout-wrapper">
+                <h2 class="section-title">Желаете обсудить условия работы?</h2>
+                <p class="section-description">
+                    Жмите на кнопку ниже и с вами свяжется специалист, закрепленный за вашим регионом.
+                </p>
+                <button class="theme-btn">Связаться с экспертом</button>
+            </div>
+        </section>
+        <footer class="footer">
+            <div class="footer__inner container">
+                <p class="slogan">Для нас не существует проблем!<br>
+                    Мы работаем, чтобы ваш бизнес<br>
+                    стал еще более успешным!
+                </p>
+                <nav class="menu menu--footer">
+                    <ul class="menu__list">
+                        <li class="menu__item"><a class="menu__link" href="#">Главная</a></li>
+                        <li class="menu__item"><a class="menu__link" href="#">Услуги</a></li>
+                        <li class="menu__item menu-item"><a class="menu__link" href="#">Продукция</a></li>
+                        <li class="menu__item menu-item"><a class="menu__link" href="#">О Компании</a></li>
+                        <li class="menu__item"><a class="menu__link" href="#">Контакты</a></li>
+                    </ul>
+                </nav>
+                <address class="contacts">
+                    <ul class="contacts__list">
+                        <li class="contacts__item"><span>тел: </span><a class="contacts__link" href="tel:+380564701700">+38
+                                (056) 470-17-00</a></li>
+                        <li class="contacts__item"><span>факс: </span><a class="contacts__link" href="#">+38 (056)
+                                470-17-01</a></li>
+                        <li class="contacts__item"><span>e-mail: </span><a class="contacts__link" href="mailto:info@steel-work.net">info@steel-work.net</a></li>
+                    </ul>
+                </address>
+            </div>
+        </footer>
+
     </main>
+
+
+
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <script src="slick/slick.min.js"></script>
+    <script src="js/slider.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>

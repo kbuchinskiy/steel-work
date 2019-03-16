@@ -1,10 +1,19 @@
-@import "common.scss";
-@import "layout.scss";
+@import "_reset.scss";
+@import "_common.scss";
+@import "_layout.scss";
+@import "_menu.scss";
 
-@import "technology1.scss";
-@import "technology2.scss";
-@import "responsibilities.scss";
-@import "_advantages.scss";
-@import "question.scss";
+@import "sections/_header.scss";
+@import "sections/_technology1.scss";
+@import "sections/_technology1Features.scss";
+@import "sections/_technology2.scss";
+@import "sections/_responsibilities.scss";
+@import "sections/_advantages.scss";
+@import "sections/_question.scss";
+@import "sections/_segments.scss";
+@import "sections/_achievements.scss";
+@import "sections/_map.scss";
+@import "sections/_contact.scss";
+@import "sections/_footer.scss";
 
-@import "media.scss";
+@import "_media.scss"; 

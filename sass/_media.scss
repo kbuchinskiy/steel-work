@@ -1,1 +1,9 @@
- 
+$break-laptop: 1366px;
+$break-large: 1200px;
+
+@media screen and (max-width: $break-laptop) {
+    .layout-wrapper {
+        max-width: 100%;
+        padding: 0 3%;
+    }
+} 

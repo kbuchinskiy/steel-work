@@ -1,0 +1,315 @@
+.menu {
+    display: flex;
+    border-bottom: 1px solid rgba(#333, .2);
+
+    &__list {
+        display: flex;
+    }
+
+    &__item {
+        margin-left: 15px;
+        margin-right: 15px;
+
+        &:first-child {
+            margin-left: 0;
+        }
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+    &__link {
+        display: block;
+        font-family: Montserrat;
+        font-size: 14px;
+        text-decoration: none;
+        color: #1d1d20;
+        letter-spacing: 0.28px;
+        transition: .3s;
+        padding-top: 40px;
+        padding-bottom: 40px; 
+        position: relative;
+        text-transform: uppercase;
+        
+        &:hover {
+            font-weight: bold;
+        }
+
+        &:hover::before {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: -1px;
+            content: "";
+            width: 120%;
+            height: 5px;
+            background-color: #f4732c;
+        }
+    }
+
+    &--hamburger {
+        @media screen and (max-width: 992px) {
+            border-bottom: none;
+            order: 3;
+
+            &.active {
+                position: fixed;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                background-color: #333;
+                justify-content: center;
+                align-items: center;
+                z-index: 1000;
+            }
+        }
+    }
+
+    &--hamburger &__list {
+        @media screen and (max-width: 992px) {
+            display: none;
+        }
+    }
+
+    &--hamburger.active &__list {
+        @media screen and (max-width: 992px) {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+    &--hamburger &__item {
+        @media screen and (max-width: 992px) {
+            margin-left: 0;
+            margin-right: 0;
+        }
+    }
+
+    &--hamburger &__link {
+        @media screen and (max-width: 992px) {
+            color: #fff;
+            text-transform: uppercase;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+    }
+
+    &--footer {
+        @media screen and (max-width: 1200px) {
+            border-bottom: none;
+        }
+
+        @media screen and (max-width: 540px) {
+            display: none;
+        }
+    }
+
+    &--footer &__list {
+        @media screen and (max-width: 1200px) {
+            flex-direction: column;
+        }
+    }
+
+    &--footer &__item {
+        @media screen and (max-width: 1200px) {
+            margin-right: 0;
+            margin-left: 0;
+        }
+    }
+
+    &--footer &__link {
+        @media screen and (max-width: 1200px) {
+            padding-top: 5px;
+            padding-bottom: 5px;
+        }
+    }
+
+    &--footer &-item__list {
+        top: auto;
+        bottom: 100%;
+    }
+}
+
+.menu-item {
+    position: relative;
+
+    &:hover &__list {
+        display: block;
+
+        @media screen and (max-width: 992px) {
+            display: none;
+        }
+    }
+
+    &.active &__list {
+        @media screen and (max-width: 992px) {
+            display: block;
+        }
+    }
+
+    ul[class="menu-item__list"] {
+        padding: 10px;
+    }
+
+    &__list {
+        position: absolute;
+        left: 0;
+        top: 100%;
+        z-index: 1000;
+        padding-top: 5px;
+        border: 1px solid rgba(51, 51, 51, 0.2);
+        background-color: #fff;
+        min-width: 250px;
+        display: none;
+
+        @media screen and (max-width: 992px) {
+            background-color: transparent;
+        }
+
+        @media screen and (max-width: 992px) {
+            position: relative;
+        }
+
+        >li {
+            margin-bottom: 5px;
+        }
+
+        >li>a {
+            display: block;
+            font-family: Montserrat;
+            font-size: 14px;
+            text-decoration: none;
+            color: #1d1d20;
+            letter-spacing: 0.28px;
+            transition: .2s;
+
+            @media screen and (max-width: 992px) {
+                color: #fff;
+            }
+
+            &:hover {
+                color: #f4732c;
+            }
+        }
+    }
+}
+
+.hamburger {
+    display: none;
+
+    @media screen and (max-width: 992px) {
+        padding: 15px 15px;
+        display: inline-block;
+        cursor: pointer;
+        transition-property: opacity, filter;
+        transition-duration: 0.15s;
+        transition-timing-function: linear;
+        font: inherit;
+        color: inherit;
+        text-transform: none;
+        background-color: transparent;
+        border: 0;
+        margin: 0;
+        overflow: visible;
+    }
+
+    &:hover {
+        opacity: 0.7;
+    }
+
+    &.is-active:hover {
+        opacity: 0.7;
+    }
+
+    &.is-active .hamburger-inner,
+    &.is-active .hamburger-inner::before,
+    &.is-active .hamburger-inner::after {
+        background-color: #000;
+    }
+}
+
+.menu.active .hamburger {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    &-inner,
+    &-inner::before,
+    &-inner::after {
+        background-color: #fff;
+    }
+}
+
+.hamburger-box {
+    width: 40px;
+    height: 24px;
+    display: inline-block;
+    position: relative;
+}
+
+.hamburger-inner {
+    display: block;
+    top: 50%;
+    margin-top: -2px;
+
+    &,
+    &::before,
+    &::after {
+        width: 40px;
+        height: 4px;
+        background-color: #000;
+        border-radius: 4px;
+        position: absolute;
+        transition-property: transform;
+        transition-duration: 0.15s;
+        transition-timing-function: ease;
+    }
+
+    &::before,
+    &::after {
+        content: "";
+        display: block;
+    }
+
+    &::before {
+        top: -10px;
+    }
+
+    &::after {
+        bottom: -10px;
+    }
+}
+
+.hamburger--elastic .hamburger-inner {
+    top: 2px;
+    transition-duration: 0.275s;
+    transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+    &::before {
+        top: 10px;
+        transition: opacity 0.125s 0.275s ease;
+    }
+
+    &::after {
+        top: 20px;
+        transition: transform 0.275s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    }
+}
+
+
+.hamburger--elastic.is-active .hamburger-inner {
+    transform: translate3d(0, 10px, 0) rotate(135deg);
+    transition-delay: 0.075s;
+
+    &::before {
+        transition-delay: 0s;
+        opacity: 0;
+    }
+
+    &::after {
+        transform: translate3d(0, -20px, 0) rotate(-270deg);
+        transition-delay: 0.075s;
+    }
+}

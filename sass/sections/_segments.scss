@@ -1,0 +1,56 @@
+#segments {
+    padding-bottom: 0;
+
+    .section-title {
+        max-width: 950px;
+    }
+
+    .section-description {
+        max-width: 1000px;
+    }
+
+    .items-container {
+        padding: 0 15px;
+
+        .item {
+            position: relative;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            width: 23.5%;
+            margin-bottom: 1.8%;
+
+            figure {
+                width: 100%;
+
+                img {
+                    position: absolute;
+                    top: 0;
+                    width: 100%;
+                }
+
+                figcaption {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 100%;
+                    min-height: 100px;
+                    margin-top: 150px;
+                    background-color: #f4732c;
+                    border-radius: 10px;
+                    text-align: center;
+                    z-index: 1;
+
+                    p {
+                        max-width: 180px;
+                        color: #fff;
+                    }
+                }
+            }
+
+
+        }
+
+
+    }
+}

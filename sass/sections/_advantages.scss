@@ -1,0 +1,51 @@
+#advantages {
+
+    .section-title {
+        max-width: 950px;
+    }
+
+    .section-description {
+        max-width: 1080px;
+        margin-bottom: 100px;
+    }
+
+    .items-container {
+        align-items: baseline;
+        padding: 0 15px;
+
+        .item {
+            position: relative;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            width: 23.5%;
+            min-height: 175px;
+            background-color: #f4732c;
+            border-radius: 10px;
+
+            .number-circle {
+                // position: absolute;
+                // top: -53px;
+                // left: 50%;
+                display: flex;
+                width: 106px;
+                height: 106px;
+                margin: -53px 0 30px;
+                background: #fff;
+                border: 5px solid #f4732c;
+                border-radius: 50%;
+
+                span {
+                    margin: auto;
+                    font: bold 45px Montserrat;
+                    color: #0d0d0d;
+                }
+            }
+
+            p {
+                text-align: center;
+                color: #fff;
+            }
+        }
+    }
+}
