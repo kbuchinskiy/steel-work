@@ -17,8 +17,6 @@ class Menu {
         window.addEventListener('resize', this._checkMobileClass);
         window.addEventListener('load', this._checkMobileClass);
 
-        console.log(this._menuItems);
-
         for (let item of this._menuItems._element) {
             item.addEventListener('click', () => {
                 for (let item of this._menuItems._element) {

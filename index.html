@@ -41,6 +41,17 @@
                             +38 (056) 470-17-00</a>
                         <button class="theme-btn">Заказать звонок</button>
                     </div>
+                    <div class="banner">
+                        <div class="company-name">
+                            <h1>Биметалл SWIP</h1>
+                            <h4>Износостойкие листы производства Steel Work</h4>
+                        </div>
+                        <div class="rewards">
+                            <p>Коллективный член Академии <br>горных наук Украины</p>
+                            <img src="images/reward1.png" alt="Изображение организации">
+                            <img src="images/reward2.png" alt="Изображение организации">
+                        </div>
+                    </div>
                 </div>
             </div>
         </header>
@@ -66,19 +77,19 @@
                     <div class="illustration-block">
                         <figure>
                             <img src="images/layers.png" alt="Изображения листьев металла">
-                            <div class="caption-container caption-container-1">
+                            <div class="caption-container" data-caption-id="1">
                                 <div class="hidden-content">
                                     <h4>Основной слой</h4>
                                     <p>принимает на себя <br>механические нагрузки</p>
-                                    <button class="toogle-caption-btn"></button>
                                 </div>
+                                <button class="toggle-caption-btn"></button>
                             </div>
-                            <div class="caption-container caption-container-2">
+                            <div class="caption-container" data-caption-id="2">
                                 <div class="hidden-content">
                                     <h4>Наплавленный слой</h4>
                                     <p>выполняет защитную <br>функцию</p>
                                 </div>
-                                <button class="toogle-caption-btn active"></button>
+                                <button class="toggle-caption-btn"></button>
                             </div>
                         </figure>
                     </div>
@@ -332,6 +343,47 @@
                 </div>
             </div>
         </section>
+        <section id="graph">
+            <div class="layout-wrapper">
+                <h2 class="section-title">Сравнение плит SWIP</h2>
+                <p class="section-description">
+                    с основными марками стали по шкале Бринелля
+                </p>
+                <div class="bar js-bar" data-max-value="800">
+                    <div class="bar__decor">
+                        <p class="axis-caption axis-caption-1">Показатель <br>прочности</p>
+                        <p class="axis-caption axis-caption-2">Виды <br>сталей</p>
+                        <svg class="bar__icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                            width="10" height="12" viewBox="0 0 10 12">
+                            <defs>
+                                <path id="1c6ma" d="M279.995 3210.991l-4.995-2.146-4.995 2.146 4.995-11.984z" />
+                            </defs>
+                            <g>
+                                <g transform="translate(-270 -3199)">
+                                    <use fill="#333" xlink:href="#1c6ma" />
+                                </g>
+                            </g>
+                        </svg>
+                        <div class="bar__decor-item"></div>
+                        <div class="bar__decor-item"></div>
+                        <div class="bar__decor-item"></div>
+                        <div class="bar__decor-item"></div>
+                        <svg class="bar__icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                            width="10" height="12" viewBox="0 0 10 12">
+                            <defs>
+                                <path id="1c6ma" d="M279.995 3210.991l-4.995-2.146-4.995 2.146 4.995-11.984z" />
+                            </defs>
+                            <g>
+                                <g transform="translate(-270 -3199)">
+                                    <use fill="#333" xlink:href="#1c6ma" />
+                                </g>
+                            </g>
+                        </svg>
+                    </div>
+                    <div class="bar__inner"></div>
+                </div>
+            </div>
+        </section>
         <section id="question">
             <div class="layout-wrapper">
                 <h2 class="section-title">Желаете задать вопрос эксперту?</h2>
@@ -344,9 +396,9 @@
                         <div class="item"><input type="tel" name="phone" placeholder="Телефон"></div>
                         <div class="item">
                             <select>
-                                <option selected>Москва</option>
-                                <option>Казань</option>
-                                <option>Новосибирск</option>
+                                <option selected>Киев</option>
+                                <option>Львов</option>
+                                <option>Житомир</option>
                             </select>
                         </div>
                         <div class="item"><input class="theme-btn" type="submit" value="ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ"></div>
@@ -566,6 +618,8 @@
     <script src="slick/slick.min.js"></script>
     <script src="js/slider.js"></script>
     <script src="js/menu.js"></script>
+    <script src="js/bar.js"></script>
+    <script src="js/product.js"></script>
     <script src="js/main.js"></script>
 </body>
 

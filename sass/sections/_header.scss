@@ -2,8 +2,11 @@
     margin-bottom: 100px;
     padding-top: 5px;
 
+    background: url(../images/header-bg.png) center/cover no-repeat;
+
     &__inner {
         display: flex;
+        flex-flow: row wrap;
         justify-content: space-between;
         align-items: flex-end;
 
@@ -53,6 +56,39 @@
 
         &:hover {
             color: #f4732c;
+        }
+    }
+}
+
+.banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+
+    .company-name {
+
+        margin: 100px 0;
+
+        h1 {
+            margin-bottom: 45px;
+            text-transform: uppercase;
+            font: bold 45px/1 Montserrat;
+            color: #2c2c2c;
+        }
+
+    }
+
+    .rewards {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        max-width: 270px;
+
+        p {
+            min-width: 100%;
+            text-align: center;
+            margin-bottom: 30px;
         }
     }
 }

@@ -28,12 +28,15 @@
         letter-spacing: 0.28px;
         transition: .3s;
         padding-top: 40px;
-        padding-bottom: 40px; 
+        padding-bottom: 40px;
         position: relative;
         text-transform: uppercase;
-        
+        text-shadow: -.5px -.5px 0 transparent,
+            .5px .5px transparent;
+
         &:hover {
-            font-weight: bold;
+            text-shadow: -.5px -.5px 0 black,
+                .5px .5px black;
         }
 
         &:hover::before {
@@ -49,9 +52,8 @@
     }
 
     &--hamburger {
-        @media screen and (max-width: 992px) {
+        @media screen and (max-width: 1024px) {
             border-bottom: none;
-            order: 3;
 
             &.active {
                 position: fixed;
@@ -68,27 +70,27 @@
     }
 
     &--hamburger &__list {
-        @media screen and (max-width: 992px) {
+        @media screen and (max-width: 1024px) {
             display: none;
         }
     }
 
     &--hamburger.active &__list {
-        @media screen and (max-width: 992px) {
+        @media screen and (max-width: 1024px) {
             display: flex;
             flex-direction: column;
         }
     }
 
     &--hamburger &__item {
-        @media screen and (max-width: 992px) {
+        @media screen and (max-width: 1024px) {
             margin-left: 0;
             margin-right: 0;
         }
     }
 
     &--hamburger &__link {
-        @media screen and (max-width: 992px) {
+        @media screen and (max-width: 1024px) {
             color: #fff;
             text-transform: uppercase;
             padding-top: 10px;
@@ -138,13 +140,13 @@
     &:hover &__list {
         display: block;
 
-        @media screen and (max-width: 992px) {
+        @media screen and (max-width: 1024px) {
             display: none;
         }
     }
 
     &.active &__list {
-        @media screen and (max-width: 992px) {
+        @media screen and (max-width: 1024px) {
             display: block;
         }
     }
@@ -164,11 +166,11 @@
         min-width: 250px;
         display: none;
 
-        @media screen and (max-width: 992px) {
+        @media screen and (max-width: 1024px) {
             background-color: transparent;
         }
 
-        @media screen and (max-width: 992px) {
+        @media screen and (max-width: 1024px) {
             position: relative;
         }
 
@@ -185,7 +187,7 @@
             letter-spacing: 0.28px;
             transition: .2s;
 
-            @media screen and (max-width: 992px) {
+            @media screen and (max-width: 1024px) {
                 color: #fff;
             }
 
@@ -199,7 +201,7 @@
 .hamburger {
     display: none;
 
-    @media screen and (max-width: 992px) {
+    @media screen and (max-width: 1024px) {
         padding: 15px 15px;
         display: inline-block;
         cursor: pointer;

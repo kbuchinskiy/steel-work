@@ -29,21 +29,28 @@
                 .caption-container {
                     position: absolute;
 
-                    &.caption-container-1 {
+                    .hidden-content {
+                        opacity: 0;
+                    }
+                    &.active .hidden-content {
+                        opacity: 1;
+                    }
+
+                    &[data-caption-id="1"] {
                         top: 34px;
                         left: 60px;
 
-                        .toogle-caption-btn {
+                        .toggle-caption-btn {
                             top: 2px;
                             left: 170px;
                         }
                     }
 
-                    &.caption-container-2 {
+                    &[data-caption-id="2"] {
                         top: 210px;
                         left: 400px;
 
-                        .toogle-caption-btn {
+                        .toggle-caption-btn {
                             top: 12px;
                             left: -50px;
                         }
@@ -63,7 +70,7 @@
                     }
                 }
 
-                .toogle-caption-btn {
+                .toggle-caption-btn {
                     display: flex;
                     position: absolute;
                     width: 40px;
@@ -94,12 +101,12 @@
                         margin-left: -10px;
                     }
 
-                    &.active {
+                    &:hover {
                         background-color: #f4732c;
                     }
 
-                    &.active::before,
-                    &.active::after {
+                    &:hover::before,
+                    &:hover::after {
                         background-color: #fff;
                     }
 

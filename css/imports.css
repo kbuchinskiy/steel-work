@@ -161,7 +161,7 @@ button.theme-btn {
   color: #fff; }
 
 main > section {
-  overflow: auto;
+  overflow: hidden;
   width: 100%;
   padding-bottom: 100px; }
 
@@ -217,9 +217,10 @@ main .layout-wrapper {
     padding-top: 40px;
     padding-bottom: 40px;
     position: relative;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    text-shadow: -.5px -.5px 0 transparent, .5px .5px transparent; }
     .menu__link:hover {
-      font-weight: bold; }
+      text-shadow: -.5px -.5px 0 black, .5px .5px black; }
     .menu__link:hover::before {
       position: absolute;
       left: 50%;
@@ -229,10 +230,9 @@ main .layout-wrapper {
       width: 120%;
       height: 5px;
       background-color: #f4732c; }
-  @media screen and (max-width: 992px) {
+  @media screen and (max-width: 1024px) {
     .menu--hamburger {
-      border-bottom: none;
-      order: 3; }
+      border-bottom: none; }
       .menu--hamburger.active {
         position: fixed;
         left: 0;
@@ -243,18 +243,18 @@ main .layout-wrapper {
         justify-content: center;
         align-items: center;
         z-index: 1000; } }
-  @media screen and (max-width: 992px) {
+  @media screen and (max-width: 1024px) {
     .menu--hamburger .menu__list {
       display: none; } }
-  @media screen and (max-width: 992px) {
+  @media screen and (max-width: 1024px) {
     .menu--hamburger.active .menu__list {
       display: flex;
       flex-direction: column; } }
-  @media screen and (max-width: 992px) {
+  @media screen and (max-width: 1024px) {
     .menu--hamburger .menu__item {
       margin-left: 0;
       margin-right: 0; } }
-  @media screen and (max-width: 992px) {
+  @media screen and (max-width: 1024px) {
     .menu--hamburger .menu__link {
       color: #fff;
       text-transform: uppercase;
@@ -285,10 +285,10 @@ main .layout-wrapper {
   position: relative; }
   .menu-item:hover .menu-item__list {
     display: block; }
-    @media screen and (max-width: 992px) {
+    @media screen and (max-width: 1024px) {
       .menu-item:hover .menu-item__list {
         display: none; } }
-  @media screen and (max-width: 992px) {
+  @media screen and (max-width: 1024px) {
     .menu-item.active .menu-item__list {
       display: block; } }
   .menu-item ul[class="menu-item__list"] {
@@ -303,10 +303,10 @@ main .layout-wrapper {
     background-color: #fff;
     min-width: 250px;
     display: none; }
-    @media screen and (max-width: 992px) {
+    @media screen and (max-width: 1024px) {
       .menu-item__list {
         background-color: transparent; } }
-    @media screen and (max-width: 992px) {
+    @media screen and (max-width: 1024px) {
       .menu-item__list {
         position: relative; } }
     .menu-item__list > li {
@@ -319,7 +319,7 @@ main .layout-wrapper {
       color: #1d1d20;
       letter-spacing: 0.28px;
       transition: .2s; }
-      @media screen and (max-width: 992px) {
+      @media screen and (max-width: 1024px) {
         .menu-item__list > li > a {
           color: #fff; } }
       .menu-item__list > li > a:hover {
@@ -327,7 +327,7 @@ main .layout-wrapper {
 
 .hamburger {
   display: none; }
-  @media screen and (max-width: 992px) {
+  @media screen and (max-width: 1024px) {
     .hamburger {
       padding: 15px 15px;
       display: inline-block;
@@ -408,9 +408,11 @@ main .layout-wrapper {
 
 .header {
   margin-bottom: 100px;
-  padding-top: 5px; }
+  padding-top: 5px;
+  background: url(../images/header-bg.png) center/cover no-repeat; }
   .header__inner {
     display: flex;
+    flex-flow: row wrap;
     justify-content: space-between;
     align-items: flex-end; }
     @media screen and (max-width: 992px) {
@@ -450,6 +452,28 @@ main .layout-wrapper {
     .callback__link:hover {
       color: #f4732c; }
 
+.banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%; }
+  .banner .company-name {
+    margin: 100px 0; }
+    .banner .company-name h1 {
+      margin-bottom: 45px;
+      text-transform: uppercase;
+      font: bold 45px/1 Montserrat;
+      color: #2c2c2c; }
+  .banner .rewards {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    max-width: 270px; }
+    .banner .rewards p {
+      min-width: 100%;
+      text-align: center;
+      margin-bottom: 30px; }
+
 #technology1 {
   padding-bottom: 0; }
   #technology1 .content-wrapper .description-block {
@@ -470,16 +494,20 @@ main .layout-wrapper {
         width: 100%; }
       #technology1 .content-wrapper .illustration-block figure .caption-container {
         position: absolute; }
-        #technology1 .content-wrapper .illustration-block figure .caption-container.caption-container-1 {
+        #technology1 .content-wrapper .illustration-block figure .caption-container .hidden-content {
+          opacity: 0; }
+        #technology1 .content-wrapper .illustration-block figure .caption-container.active .hidden-content {
+          opacity: 1; }
+        #technology1 .content-wrapper .illustration-block figure .caption-container[data-caption-id="1"] {
           top: 34px;
           left: 60px; }
-          #technology1 .content-wrapper .illustration-block figure .caption-container.caption-container-1 .toogle-caption-btn {
+          #technology1 .content-wrapper .illustration-block figure .caption-container[data-caption-id="1"] .toggle-caption-btn {
             top: 2px;
             left: 170px; }
-        #technology1 .content-wrapper .illustration-block figure .caption-container.caption-container-2 {
+        #technology1 .content-wrapper .illustration-block figure .caption-container[data-caption-id="2"] {
           top: 210px;
           left: 400px; }
-          #technology1 .content-wrapper .illustration-block figure .caption-container.caption-container-2 .toogle-caption-btn {
+          #technology1 .content-wrapper .illustration-block figure .caption-container[data-caption-id="2"] .toggle-caption-btn {
             top: 12px;
             left: -50px; }
         #technology1 .content-wrapper .illustration-block figure .caption-container h4 {
@@ -491,7 +519,7 @@ main .layout-wrapper {
         #technology1 .content-wrapper .illustration-block figure .caption-container p {
           font-size: 14px;
           line-height: 1.2; }
-      #technology1 .content-wrapper .illustration-block figure .toogle-caption-btn {
+      #technology1 .content-wrapper .illustration-block figure .toggle-caption-btn {
         display: flex;
         position: absolute;
         width: 40px;
@@ -499,7 +527,7 @@ main .layout-wrapper {
         border-radius: 50%;
         background-color: #f7f7f7;
         font-weight: 100; }
-        #technology1 .content-wrapper .illustration-block figure .toogle-caption-btn::before, #technology1 .content-wrapper .illustration-block figure .toogle-caption-btn::after {
+        #technology1 .content-wrapper .illustration-block figure .toggle-caption-btn::before, #technology1 .content-wrapper .illustration-block figure .toggle-caption-btn::after {
           position: absolute;
           top: 50%;
           left: 50%;
@@ -508,15 +536,15 @@ main .layout-wrapper {
           height: 1px;
           width: 20px;
           background-color: #000; }
-        #technology1 .content-wrapper .illustration-block figure .toogle-caption-btn::after {
+        #technology1 .content-wrapper .illustration-block figure .toggle-caption-btn::after {
           height: 20px;
           width: 1px;
           margin-top: -10px; }
-        #technology1 .content-wrapper .illustration-block figure .toogle-caption-btn::before {
+        #technology1 .content-wrapper .illustration-block figure .toggle-caption-btn::before {
           margin-left: -10px; }
-        #technology1 .content-wrapper .illustration-block figure .toogle-caption-btn.active {
+        #technology1 .content-wrapper .illustration-block figure .toggle-caption-btn:hover {
           background-color: #f4732c; }
-        #technology1 .content-wrapper .illustration-block figure .toogle-caption-btn.active::before, #technology1 .content-wrapper .illustration-block figure .toogle-caption-btn.active::after {
+        #technology1 .content-wrapper .illustration-block figure .toggle-caption-btn:hover::before, #technology1 .content-wrapper .illustration-block figure .toggle-caption-btn:hover::after {
           background-color: #fff; }
 
 #technology1Features .section-title {
@@ -678,6 +706,117 @@ main .layout-wrapper {
     #advantages .items-container .item p {
       text-align: center;
       color: #fff; }
+
+#graph {
+  padding-bottom: 150px; }
+  #graph .axis-caption {
+    position: absolute;
+    font-size: 14px; }
+    #graph .axis-caption-1 {
+      top: -15px;
+      left: -100px; }
+    #graph .axis-caption-2 {
+      bottom: -60px;
+      right: -60px; }
+  #graph .bar {
+    position: relative;
+    width: 100%;
+    height: 470px;
+    padding-bottom: 2px; }
+    #graph .bar__title {
+      text-align: center; }
+    #graph .bar__desc {
+      text-align: center; }
+    #graph .bar__decor {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      border-bottom: 2px solid #333;
+      border-left: 2px solid #333; }
+    #graph .bar__icon {
+      width: 10px;
+      height: 12px;
+      position: absolute; }
+      #graph .bar__icon:first-of-type {
+        top: -10px;
+        left: -6px; }
+      #graph .bar__icon:last-of-type {
+        right: -9px;
+        bottom: -7px;
+        transform: rotate(90deg); }
+    #graph .bar__decor-item {
+      position: absolute;
+      left: 50px;
+      width: 96.3%;
+      height: 1px;
+      background-color: rgba(51, 51, 51, 0.05); }
+      #graph .bar__decor-item:nth-of-type(1) {
+        top: 0%; }
+      #graph .bar__decor-item:nth-of-type(2) {
+        top: 25%; }
+      #graph .bar__decor-item:nth-of-type(3) {
+        top: 50%; }
+      #graph .bar__decor-item:nth-of-type(4) {
+        top: 75%; }
+      #graph .bar__decor-item:before {
+        position: absolute;
+        left: -30px;
+        top: -10px;
+        content: attr(data-value);
+        font-size: 14px;
+        color: rgba(51, 51, 51, 0.6); }
+    #graph .bar__inner {
+      display: flex;
+      height: 100%;
+      justify-content: space-between;
+      align-items: flex-end;
+      padding-left: 50px;
+      padding-right: 50px; }
+    #graph .bar__column {
+      transition: height .6s linear;
+      position: relative;
+      border-top: 12px solid #949496;
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      max-width: 100px;
+      height: 50%;
+      background-color: rgba(51, 51, 51, 0.6); }
+      #graph .bar__column[data-max="true"] {
+        background-color: #ff5f00;
+        border-top-color: #ff7420; }
+      @media screen and (max-width: 992px) {
+        #graph .bar__column {
+          max-width: 12%; } }
+    #graph .bar__value, #graph .bar__name {
+      text-align: center;
+      color: #333333;
+      font-size: 14px;
+      text-transform: uppercase;
+      letter-spacing: 0.98px;
+      line-height: 19px;
+      position: absolute;
+      left: 0;
+      width: 100%; }
+    #graph .bar__column[data-max="true"] .bar__value,
+    #graph .bar__column[data-max="true"] .bar__name {
+      font-family: Montserrat;
+      font-size: 16px;
+      letter-spacing: 0.64px;
+      font-weight: 700; }
+    #graph .bar__value {
+      top: -35px; }
+    #graph .bar__name {
+      bottom: -50px; }
+      @media screen and (max-width: 768px) {
+        #graph .bar__name {
+          transform: translateX(-50%) rotate(-90deg);
+          transform-origin: 50% 50%;
+          text-align: center;
+          left: 50%;
+          width: 100px;
+          bottom: -70px;
+          text-align: right; } }
 
 #question {
   background-color: #f7f7f7; }
