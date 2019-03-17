@@ -139,6 +139,15 @@ body {
 a {
   text-decoration: unset; }
 
+textarea,
+input.text,
+input[type="text"],
+input[type="button"],
+input[type="submit"],
+.input-checkbox {
+  -webkit-appearance: none;
+  border-radius: 0; }
+
 input,
 select {
   outline: unset; }
@@ -860,7 +869,7 @@ main .layout-wrapper {
       background: #f7f7f7 url(../images/arrow3.png) 90% center/14px 10px no-repeat; }
       #question .item select option {
         color: #2c2c2c; }
-    #question .item input[type=submit] {
+    #question .item input[type="submit"] {
       padding: 0;
       text-align: center;
       border-radius: 5px;
@@ -1270,6 +1279,8 @@ main .layout-wrapper {
       width: 100%;
       margin: 0 auto 20px; }
   /* segments */
+  #segments .items-container {
+    padding: 0; }
   #segments .item {
     width: 48%;
     margin-bottom: 20px; }
@@ -1284,20 +1295,36 @@ main .layout-wrapper {
   /* responsibilities */
   #responsibilities .item {
     width: 100%;
-    display: flex;
     text-align: center; }
     #responsibilities .item figure {
+      display: flex;
+      align-items: center;
       width: 100%; }
+      #responsibilities .item figure img {
+        margin: 0 30px 0 0; }
+      #responsibilities .item figure figcaption {
+        text-align: left; }
   /* advantages */
-  #advantages .items-container .item {
-    width: 100%;
-    height: 150px; }
-    #advantages .items-container .item .number-circle {
-      margin-bottom: 15px; }
-    #advantages .items-container .item p {
-      max-width: 90%; }
-    #advantages .items-container .item:nth-child(n) {
-      margin-bottom: 70px; } }
+  #advantages .section-description {
+    margin-bottom: 50px; }
+  #advantages .items-container {
+    flex-direction: column;
+    align-items: flex-end; }
+    #advantages .items-container .item {
+      flex-direction: row;
+      align-items: center;
+      width: 90%;
+      height: 110px; }
+      #advantages .items-container .item .number-circle {
+        min-width: 80px;
+        height: 80px;
+        margin: auto 10px auto -35px; }
+      #advantages .items-container .item p {
+        max-width: 100%;
+        padding: 0 20px 0 0;
+        text-align: left; }
+      #advantages .items-container .item:nth-child(n) {
+        margin-bottom: 30px; } }
 
 @media screen and (max-width: 374px) {
   button.theme-btn {

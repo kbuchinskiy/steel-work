@@ -10,7 +10,7 @@
         font: bold 20px/1.1 Montserrat;
         text-align: left;
     }
-
+ 
     .section-description {
         margin: 0 0 40px 0;
         text-align: left;
@@ -153,6 +153,9 @@
 
     /* segments */
     #segments {
+        .items-container {
+            padding: 0;
+        }
         .item {
             width: 48%;
             margin-bottom: 20px;
