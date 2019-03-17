@@ -6,14 +6,14 @@ $("#slider").slick({
     responsive: [{
             breakpoint: 1365,
             settings: {
-                slidesToShow: 2,
-                arrows: false
+                slidesToShow: 2
             }
         },
         {
-            breakpoint: 600,
+            breakpoint: 768,
             settings: {
-                slidesToShow: 1
+                slidesToShow: 1,
+                arrows: false
             }
         }
     ]

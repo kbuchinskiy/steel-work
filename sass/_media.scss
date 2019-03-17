@@ -1,9 +1,13 @@
 $break-laptop: 1366px;
-$break-large: 1200px;
+$break-tablet-landscape: 1024px;
+$break-tablet-portrait: 768px;
+$break-mobile-large: 767px;
+$break-mobile-medium: 424px;
+$break-mobile-small: 374px;
 
-@media screen and (max-width: $break-laptop) {
-    .layout-wrapper {
-        max-width: 100%;
-        padding: 0 3%;
-    }
-} 
+@import "media/_laptop.scss";
+@import "media/_tabletLandscape.scss";
+@import "media/_tabletPortrait.scss";
+@import "media/_mobileLarge.scss";
+@import "media/_mobileMedium.scss";
+@import "media/_mobileSmall.scss";

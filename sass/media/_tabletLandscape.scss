@@ -1,0 +1,191 @@
+@media screen and (max-width: $break-tablet-landscape) {
+
+    .section-title {
+        margin: 50px auto 40px;
+        font: bold 30px/1.1 Montserrat;
+    }
+
+    .section-description {
+        margin: 0 0 40px 0;
+        text-align: left;
+    }
+
+    main>section {
+        padding-bottom: 50px;
+    }
+
+    /* header */
+    .header {
+        padding-top: 20px;
+
+        .callback {
+            margin-right: 70px;
+        }
+
+        .menu--hamburger .hamburger {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+    }
+
+    /* technology1 */
+    #technology1 {
+        .content-wrapper {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .illustration-block {
+            margin-top: 30px;
+        }
+
+        padding-bottom: 40px;
+    }
+
+    /* technology1Features */
+    #technology1Features {
+
+        .section-title {
+            max-width: 760px;
+        }
+
+        figure {
+            height: 100%;
+            width: 100%;
+
+            img {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+
+            figcaption {
+
+                h4 {
+                    font-size: 18px;
+                }
+
+                p {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+
+    /* technology2 */
+    #technology2 {
+
+        .section-title {
+            max-width: 600px;
+        }
+
+        .illustration-block {
+            .line {
+                display: none;
+            }
+        }
+
+        .description-block {
+            .text-1 {
+                &::before {
+                    margin: 0 auto 20px;
+
+                }
+
+                &::after {
+                    margin: 20px auto 13px;
+                }
+            }
+        }
+    }
+
+    /* responsibilities */
+    #responsibilities {
+
+        .item {
+            width: 33.33%;
+            padding-right: 20px;
+        }
+    }
+
+    /* advantages */
+    #advantages {
+        .item {
+
+            .description {
+                font-size: 15px;
+                padding: 0 12px;
+            }
+        }
+
+    }
+
+    /* question */
+    #question {
+        .items-container {
+            flex-wrap: wrap;
+
+            .item {
+                width: 33%;
+
+                &:last-child {
+                    margin: 50px auto 0;
+                    width: 40%;
+                }
+            }
+        }
+    }
+
+    /* graph */
+    #graph {
+        .section-description {
+            text-align: center;
+        }
+
+        .axis-caption {
+            transform: rotate(-90deg);
+
+            &-1 {
+                top: 210px;
+                left: -110px;
+                width: auto;
+            }
+
+            &-2 {
+                bottom: 80px;
+                right: -40px;
+                width: auto;
+            }
+        }
+    }
+
+    /* segments */
+    #segments figure figcaption {
+        margin-top: 110px;
+
+        p {
+            font-size: 16px;
+        }
+    }
+
+    /* slider */
+    #slider {
+        margin: 50px auto 0;
+    }
+
+    /* contact */
+    #contact {
+        .section-description {
+            text-align: center;
+        }
+    }
+
+    /* footer */
+    .footer .footer__inner {
+        padding: 0 3%;
+    }
+}

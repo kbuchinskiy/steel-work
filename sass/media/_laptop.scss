@@ -1,0 +1,37 @@
+@media screen and (max-width: $break-laptop) {
+    .layout-wrapper {
+        max-width: 100%;
+        padding: 0 3%;
+    }
+
+    #technology1Features figure figcaption {
+        height: 60%;
+    }
+
+    #graph {
+
+        .bar {
+            margin: 0 auto;
+            width: 90%;
+        }
+
+        .axis-caption {
+
+            &-1 {
+                top: -70px;
+                left: 0px;
+            }
+
+            &-2 {
+                bottom: -60px;
+                right: 0px;
+            }
+        }
+
+    }
+
+
+    #slider {
+        width: 90%;
+    }
+}

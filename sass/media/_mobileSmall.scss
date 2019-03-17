@@ -1,0 +1,69 @@
+@media screen and (max-width: $break-mobile-small) {
+
+    button.theme-btn {
+        width: 90%;
+        padding: 0;
+
+
+    }
+
+    /* header */
+    .header {
+        .logo__link img {
+            width: 80%;
+        }
+
+        .banner .company-name h1 {
+            font-size: 27px;
+        }
+    }
+
+    /* question */
+    #question {
+
+        .items-container .item:nth-child(n) {
+            width: 100%;
+        }
+
+        .item input,
+        .item select {
+            width: 100%;
+        }
+    }
+
+    /* segments */
+    #segments {
+        .item {
+            width: 100%;
+            margin-bottom: 20px;
+
+            img {
+                height: 100%;
+            }
+
+            figcaption {
+                margin-top: 110px;
+            }
+        }
+    }
+
+    /* slider */
+    #slider {
+        width: 100%;
+
+        .slick-slide {
+            figure {
+                img.logo {
+                    top: 30px;
+                    left: 30px;
+                    width: 50%;
+                }
+
+                figcaption {
+                    font-size: 16px;
+                }
+            }
+
+        }
+    }
+}

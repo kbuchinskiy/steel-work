@@ -8,16 +8,16 @@
     .items-container {
         justify-content: center;
         align-items: baseline;
+    }
 
-        .item { 
-            width: 360px;
-            margin-bottom: 30px;
+    .item {
+        width: 360px;
+        margin-bottom: 30px;
+    }
 
-            figure {
-                img {
-                    margin-bottom: 10px;
-                }
-            }
+    figure {
+        img {
+            margin-bottom: 10px;
         }
     }
-} 
+}

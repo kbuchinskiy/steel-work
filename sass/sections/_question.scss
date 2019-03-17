@@ -1,56 +1,55 @@
 #question {
     background-color: #f7f7f7;
 
-    form {
-        .items-container {
-            align-items: baseline;
-            padding: 0 15px;
+    .items-container {
+        align-items: baseline;
+        padding: 0 15px;
+    }
 
-            .item {
-                width: 23.5%;
-                position: relative;
+    .item {
+        width: 23.5%;
+        position: relative;
 
-                input,
-                select {
-                    display: block;
-                    width: 90%;
-                    min-height: 60px;
-                    padding: 0 0 0 7%;
-                    border: 1px solid #bababa;
-                    border-radius: 5px;
-                    background: #f7f7f7;
-                    font: 14px/1 Montserrat;
-                    color: #2c2c2c;
-                }
+        input,
+        select {
+            display: block;
+            width: 90%;
+            height: 60px;
+            padding: 0 0 0 7%;
+            border: 1px solid #bababa;
+            border-radius: 5px;
+            background: #f7f7f7;
+            font: 14px/1 Montserrat;
+            color: #2c2c2c;
+        }
 
-                input::placeholder {
-                    color: #2c2c2c;
-                }
+        input::placeholder {
+            color: #2c2c2c;
+        }
 
-                select {
-                    color: #2c2c2c;
-                    position: relative;
-                    -webkit-appearance: none;
-                    -moz-appearance: none;
-                    appearance: none;
-                    background: #f7f7f7 url(../images/arrow3.png) 90% center/14px 10px no-repeat;
-                    option {
-                        color: #2c2c2c;
-                    }
-                }
+        select {
+            color: #2c2c2c;
+            position: relative;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            background: #f7f7f7 url(../images/arrow3.png) 90% center/14px 10px no-repeat;
 
-                input[type=submit] {
-                    padding: 0;
-                    text-align: center;
-                    border-radius: 5px;
-                    border: unset;
-                    background-color: #f4732c;
-                    text-transform: uppercase;
-                    font-size: 14px;
-                    font-weight: bold;
-                    color: #fff;
-                }
+            option {
+                color: #2c2c2c;
             }
+        }
+
+        input[type=submit] {
+            padding: 0;
+            text-align: center;
+            border-radius: 5px;
+            border: unset;
+            background-color: #f4732c;
+            text-transform: uppercase;
+            font-size: 14px;
+            font-weight: bold;
+            color: #fff;
         }
     }
 

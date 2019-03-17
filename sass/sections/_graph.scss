@@ -8,11 +8,13 @@
         &-1 {
             top: -15px;
             left: -100px;
+            width: 50px;
         }
 
         &-2 {
             bottom: -60px;
             right: -60px;
+            width: 50px;
         }
     }
 
@@ -113,7 +115,7 @@
                 border-top-color: #ff7420;
             }
 
-            @media screen and (max-width: 992px) {
+            @media screen and (max-width: 1024px) {
                 max-width: 12%;
             }
         }

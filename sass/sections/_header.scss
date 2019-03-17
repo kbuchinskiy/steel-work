@@ -1,5 +1,5 @@
 .header {
-    margin-bottom: 100px;
+    position: relative;
     padding-top: 5px;
 
     background: url(../images/header-bg.png) center/cover no-repeat;
@@ -10,7 +10,7 @@
         justify-content: space-between;
         align-items: flex-end;
 
-        @media screen and (max-width: 992px) {
+        @media screen and (max-width: 1024px) {
             align-items: center;
         }
     }

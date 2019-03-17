@@ -1,0 +1,171 @@
+@media screen and (max-width: $break-mobile-large) {
+
+    .layout-wrapper, .footer {
+        padding-left:  5%;
+        padding-right: 5%;
+    }
+
+    .section-title {
+        margin: 40px auto 20px;
+        font: bold 20px/1.1 Montserrat;
+        text-align: left;
+    }
+
+    .section-description {
+        margin: 0 0 40px 0;
+        text-align: left;
+        font-size: 16px;
+    }
+
+    main>section {
+        padding-bottom: 30px;
+    }
+
+    .theme-btn {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /* header */
+    .header {
+        .banner {
+
+            .company-name {
+                margin: 30px 0 30px;
+
+                h1 {
+                    margin-bottom: 0;
+                }
+
+                h4 {
+                    display: none;
+                }
+            }
+
+        }
+    }
+
+    /* technology1 */
+    #technology1 {
+        .description-block {
+            font-size: 16px;
+        }
+
+        .illustration-block {
+            display: none;
+        }
+    }
+
+    /* technology1Features */
+    #technology1Features {
+        .items-container {
+            .item {
+                width: 100%;
+                margin-bottom: 30px;
+            }
+        }
+
+        .section-note {
+            margin: 20px auto 30px;
+            font-size: 16px;
+        }
+    }
+
+    /* technology2 */
+    #technology2 {
+
+        .illustration-block {
+            display: none;
+        }
+
+        .description-block {
+            margin: 0;
+        }
+    }
+
+    /* responsibilities */
+    #responsibilities {
+        .items-container {
+            justify-content: space-between;
+        }
+
+        .item {
+            width: 50%;
+
+            img {
+                width: 50px;
+            }
+        }
+    }
+
+    /* advantages */
+    #advantages {
+        .items-container {
+
+            .item {
+                width: 48%;
+
+                &:nth-child(-n+2) {
+                    margin-bottom: 70px;
+                }
+            }
+        }
+    }
+
+    /* graph */
+    #graph {
+        .bar__inner {
+            padding: 0 10px 0 32px;
+        }
+
+        .bar__decor-item {
+            left: 30px;
+        }
+
+        .bar__decor-item::before {
+            left: -22px;
+            top: -6px;
+            font-size: 10px;
+        }
+
+        .axis-caption-1 {
+            left: -100px;
+        }
+
+        .axis-caption-2 {
+            right: -60px;
+        }
+    }
+
+    /* question */
+    #question {
+        .items-container {
+            align-items: center;
+
+            .item:nth-child(n) {
+                display: flex;
+                justify-content: center;
+                width: 100%;
+                margin: 0 auto 20px;
+            }
+        }
+    }
+
+    /* segments */
+    #segments {
+        .item {
+            width: 48%;
+            margin-bottom: 20px;
+        }
+    }
+
+    /* slider */
+    #slider {
+        width: 100%;
+    }
+
+    /* slider */
+    #achievements {
+        padding-bottom: 60px;
+    }
+}
