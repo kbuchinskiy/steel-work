@@ -11,7 +11,7 @@
     #graph {
 
         .bar {
-            margin: 0 auto;  
+            margin: 0 auto;
             width: 90%;
         }
 
@@ -34,4 +34,20 @@
     #slider {
         width: 90%;
     }
+
+    .popup {
+
+        .popup-content {
+            margin: 70px auto 60px;
+        }
+
+        .popup-title {
+            font-size: 35px;
+        }
+
+        .popup-caption {
+            margin-bottom: 30px;
+        }
+    }
+
 }

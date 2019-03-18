@@ -18,7 +18,7 @@
             .line {
                 margin-top: 60px;
             }
- 
+
             figcaption {
                 position: absolute;
                 top: 50px;
@@ -37,35 +37,40 @@
         align-items: center;
         margin-left: 20px;
 
-        .text-1 {
-            position: relative;
-            max-width: 500px;
-            text-align: center;
-
-            &::before,
-            &::after {
-                content: '';
-                display: block;
-                width: 14px;
-                height: 10px;
-            }
-
-            &::before {
-                margin: 10px auto 25px;
-                background: url(../images/arrow2.png) center/contain no-repeat;
-            }
-
-            &::after {
-                margin: 20px auto;
-                background: url(../images/arrow3.png) center/contain no-repeat;
-            }
-        }
-
         .text-2 {
             max-width: 400px;
             margin-bottom: 28px;
             font-size: 14px;
             text-align: center;
+        }
+    }
+
+    #verticalSlider {
+        text-align: center;
+
+        .slick-slide {
+            margin: 10px 0;
+        }
+
+        .slick-arrow {
+            position: static;
+            width: 14px;
+            height: 10px;
+
+            &.slick-prev {
+                margin: 10px auto 25px;
+                background: url(../images/arrow2.png) center/contain no-repeat;
+            }
+
+            &.slick-next {
+                margin: 20px auto;
+                background: url(../images/arrow3.png) center/contain no-repeat;
+            }
+
+            &::before,
+            &::after {
+                display: none;
+            }
         }
     }
 }

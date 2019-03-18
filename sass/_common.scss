@@ -1,4 +1,4 @@
-$branc-color: #df6928;
+$branc-color: #fd691c;
 
 body {
     font-family: OpenSans,
@@ -18,7 +18,7 @@ input,
 select {
     outline: unset;
 }
- 
+
 button,
 input[type=submit] {
     border: unset;
@@ -33,7 +33,53 @@ button.theme-btn {
     background-color: $branc-color;
     border-radius: 5px;
     text-transform: uppercase;
-    font-size: 14px;
-    font-weight: bold;
+    font: bold 14px Montserrat;
+    letter-spacing: 0.2px;
     color: #fff;
+}
+
+.theme-form {
+
+    input,
+    select {
+        display: block;
+        width: 100%;
+        height: 60px;
+        padding: 0 7%;
+        border: 1px solid #bababa;
+        border-radius: 5px;
+        background: #f7f7f7;
+        font: 14px/1 Montserrat;
+        color: #2c2c2c;
+    }
+
+    input::placeholder {
+        color: #2c2c2c;
+    }
+
+    select {
+        position: relative;
+        padding: 0 7%;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        background: #f7f7f7 url(../images/arrow3.png) 90% center/14px 10px no-repeat;
+        color: #2c2c2c;
+
+        option {
+            color: #2c2c2c;
+        }
+    }
+
+    input[type="submit"] {
+        padding: 0;
+        text-align: center;
+        border-radius: 5px;
+        border: unset;
+        background-color: $branc-color;
+        text-transform: uppercase;
+        font-size: 14px;
+        font-weight: bold;
+        color: #fff;
+    }
 }

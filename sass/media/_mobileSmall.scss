@@ -1,12 +1,5 @@
 @media screen and (max-width: $mobile-small) {
 
-    button.theme-btn {
-        width: 90%;
-        padding: 0;
-
-
-    }
-
     /* header */
     .header {
         .logo__link img {
@@ -14,11 +7,11 @@
         }
 
         .banner .company-name h1 {
-            font-size: 27px; 
+            font-size: 27px;
         }
     }
 
-    /* question */ 
+    /* question */
     #question {
 
         .items-container .item:nth-child(n) {
@@ -64,6 +57,33 @@
                 }
             }
 
+        }
+    }
+
+    /* popups */
+    .popup {
+        width: 92%;
+
+        .theme-form {
+            max-width: 90%;
+        }
+
+        .popup-content {
+            margin: 80px auto 50px;
+        }
+
+        .popup-title {
+            font-size: 20px;
+        }
+
+        .popup-caption {
+            font-size: 12px;
+            margin-bottom: 20px;
+        }
+
+        input,
+        select {
+            height: 50px;
         }
     }
 }

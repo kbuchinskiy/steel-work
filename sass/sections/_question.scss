@@ -7,50 +7,8 @@
     }
 
     .item {
-        width: 23.5%;
+        width: 21.5%;
         position: relative;
-
-        input, 
-        select {
-            display: block;
-            width: 90%;
-            height: 60px;
-            padding: 0 0 0 7%;
-            border: 1px solid #bababa;
-            border-radius: 5px;
-            background: #f7f7f7;
-            font: 14px/1 Montserrat;
-            color: #2c2c2c;
-        }
-
-        input::placeholder {
-            color: #2c2c2c;
-        } 
-
-        select {
-            color: #2c2c2c;
-            position: relative;
-            -webkit-appearance: none;
-            -moz-appearance: none;
-            appearance: none;
-            background: #f7f7f7 url(../images/arrow3.png) 90% center/14px 10px no-repeat;
-
-            option {
-                color: #2c2c2c;
-            }
-        }
-
-        input[type="submit"] {
-            padding: 0;
-            text-align: center;
-            border-radius: 5px;
-            border: unset;
-            background-color: $branc-color;
-            text-transform: uppercase;
-            font-size: 14px;
-            font-weight: bold;
-            color: #fff;
-        }
     }
 
 }

@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.html",
   "scripts": {
-    "sass": "node-sass -w sass -o css"
+    "sass--watch": "node-sass -w sass -o css",
+    "sass": "node-sass sass -o css"
   },
   "repository": {
     "type": "git",
@@ -19,4 +20,4 @@
   "dependencies": {
     "node-sass": "^4.11.0"
   }
-}
+}  

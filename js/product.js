@@ -1,5 +1,4 @@
-(function () {
-    const toggleButtons = document.querySelectorAll('#technology1 .caption-container');
+$(document).ready(function () {
     const illustrationBlock = document.querySelector('#technology1 .illustration-block');
 
     illustrationBlock.addEventListener('click', toggleCaption);
@@ -9,4 +8,4 @@
             e.target.closest('.caption-container').classList.toggle('active');
         }
     }
-})();
+});

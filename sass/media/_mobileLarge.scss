@@ -21,7 +21,7 @@
     main>section {
         padding-bottom: 30px;
     }
- 
+
     .theme-btn {
         margin-left: auto;
         margin-right: auto;
@@ -204,5 +204,45 @@
     /* slider */
     #achievements {
         padding-bottom: 60px;
+    }
+
+    /* popups */
+    .popup {
+        width: 92%;
+
+        .theme-form {
+            max-width: 80%;
+
+            .item:last-child {
+                width: 100%;
+                max-width: unset;
+            }
+        }
+
+        .popup-content {
+            margin: 70px auto 60px;
+        }
+
+        .popup-title {
+            font-size: 25px;
+            margin-bottom: 20px;
+        }
+
+        .popup-caption {
+            font-size: 14px;
+            margin-bottom: 30px;
+        }
+
+        input,
+        select {
+            height: 50px;
+        }
+    }
+
+    #thanksPopup {
+
+        .popup-title p {
+            font-size: 14px;
+        }
     }
 }

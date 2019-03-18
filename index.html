@@ -39,7 +39,7 @@
                     </nav>
                     <div class="callback"><a class="callback__link" href="tel:380564701400">
                             +38 (056) 470-17-00</a>
-                        <button class="theme-btn">Заказать звонок</button>
+                        <button class="theme-btn" data-open-popup-id="contact-popup">Заказать звонок</button>
                     </div>
                     <div class="banner">
                         <div class="company-name">
@@ -72,7 +72,7 @@
                             наплавленный слой имеет высокую износостойкость и выполняет защитную
                             функцию.
                         </p>
-                        <button class="theme-btn" data-action="get-quiz">Получить опросный лист</button>
+                        <button class="theme-btn" id="getQuiz" data-action="get-quiz">Получить опросный лист</button>
                     </div>
                     <div class="illustration-block">
                         <figure>
@@ -187,10 +187,31 @@
                         </figure>
                     </div>
                     <div class="description-block">
-                        <p class="text-1">
-                            Позволяет изготовить детали и оборудование, которые
-                            невозможно производить традиционными методами
-                        </p>
+
+                        <div id="verticalSlider">
+                            <div>
+                                <p>
+                                    Позволяет изготовить детали и оборудование, которые
+                                    невозможно производить традиционными методами
+                                </p>
+                            </div>
+
+                            <div>
+                                <p>
+                                    Позволяет изготовить детали и оборудование, которые
+                                    невозможно производить традиционными методами
+                                </p>
+                            </div>
+
+                            <div>
+                                <p>
+                                    Позволяет изготовить детали и оборудование, которые
+                                    невозможно производить традиционными методами
+                                </p>
+                            </div>
+
+                        </div>
+
                         <p class="text-2">
                             Смотрите полный каталог биметаллических листов SWIP
                             стандартных размеров по технологии сварки взрывом
@@ -390,15 +411,15 @@
                 <p class="section-description">
                     Заполните форму ниже и с вами свяжется специалист, закрепленный за вашим регионом.
                 </p>
-                <form onsubmit="event.preventDefault()">
+                <form class="theme-form" onsubmit="event.preventDefault()">
                     <div class="items-container">
-                        <div class="item"><input type="text" name="name" placeholder="Имя"></div>
-                        <div class="item"><input type="tel" name="phone" placeholder="Телефон"></div>
+                        <div class="item"><input type="text" name="name" placeholder="Имя" required></div>
+                        <div class="item"><input type="tel" name="phone" placeholder="Телефон" required></div>
                         <div class="item">
                             <select>
-                                <option selected>Киев</option>
-                                <option>Львов</option>
-                                <option>Житомир</option>
+                                <option selected>Выберите страну</option>
+                                <option>Украина</option>
+                                <option>Россия</option>
                             </select>
                         </div>
                         <div class="item">
@@ -581,7 +602,7 @@
                 <p class="section-description">
                     Жмите на кнопку ниже и с вами свяжется специалист, закрепленный за вашим регионом.
                 </p>
-                <button class="theme-btn">Связаться с экспертом</button>
+                <button class="theme-btn" data-open-popup-id="contact-popup">Связаться с экспертом</button>
             </div>
         </section>
         <footer class="footer">
@@ -610,19 +631,57 @@
                 </address>
             </div>
         </footer>
-
     </main>
 
+    <div class="popup-overlay" id="contactPopup">
+        <div class="popup">
+            <div class="close-btn"></div>
+            <div class="popup-content">
+                <div class="popup-title">Заполните все поля</div>
+                <div class="popup-caption">И с вами в ближайшее время свяжется инженер,
+                    закрепленный за вашим регионом</div>
+
+                <form class="theme-form">
+                    <div class="items-container">
+                        <div class="item"><input type="text" name="name" placeholder="Имя" required></div>
+                        <div class="item"><input type="tel" name="phone" placeholder="Телефон" required></div>
+                        <div class="item">
+                            <select>
+                                <option selected>Выберите страну</option>
+                                <option>Украина</option>
+                                <option>Россия</option>
+                            </select>
+                        </div>
+                        <div class="item">
+                            <input class="theme-btn" type="submit" value="ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="popup-overlay" id="thanksPopup">
+        <div class="popup">
+            <div class="close-btn"></div>
+            <div class="popup-content">
+                <div class="popup-title">Спасибо
+                    <p>за заполненную форму!</p>
+                </div>
+                <div class="popup-caption">Специалист с вами свяжется в течении 15 минут.</div>
+            </div>
+        </div>
+    </div>
 
 
     <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
         crossorigin="anonymous"></script>
     <script src="slick/slick.min.js"></script>
-    <script src="js/slider.js"></script>
+    <script src="js/sliders.js"></script>
     <script src="js/menu.js"></script>
     <script src="js/bar.js"></script>
+    <script src="js/popups.js"></script>
     <script src="js/product.js"></script>
-    <script src="js/main.js"></script>
 </body>
 
 </html>
