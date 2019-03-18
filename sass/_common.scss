@@ -1,3 +1,5 @@
+$branc-color: #df6928;
+
 body {
     font-family: OpenSans,
         Arial,
@@ -16,7 +18,7 @@ input,
 select {
     outline: unset;
 }
-
+ 
 button,
 input[type=submit] {
     border: unset;
@@ -28,7 +30,7 @@ button.theme-btn {
     display: block;
     height: 55px;
     padding: 1.4em 4em;
-    background-color: #f4732c;
+    background-color: $branc-color;
     border-radius: 5px;
     text-transform: uppercase;
     font-size: 14px;

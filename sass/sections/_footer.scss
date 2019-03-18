@@ -53,7 +53,7 @@
         letter-spacing: 0.28px;
 
         >span {
-            color: #f4732c;
+            color: $branc-color;
             transition: .2s;
         }
     }
@@ -65,10 +65,10 @@
     }
 
     &__item:hover>span {
-        color: #1d1d20;
+        color: #1d1d20; 
     }
 
     &__item:hover &__link {
-        color: #f4732c;
+        color: $branc-color;
     }
 }

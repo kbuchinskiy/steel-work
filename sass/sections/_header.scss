@@ -21,7 +21,7 @@
     align-items: center;
 
     &__link {
-        display: block;
+        display: block; 
         margin-right: 18px;
     }
 
@@ -55,7 +55,7 @@
         margin-bottom: 10px;
 
         &:hover {
-            color: #f4732c;
+            color: $branc-color;
         }
     }
 }
