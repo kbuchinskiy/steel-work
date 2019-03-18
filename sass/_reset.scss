@@ -138,3 +138,15 @@ table {
     border-collapse: collapse;
     border-spacing: 0;
 }
+
+textarea,
+input,
+input[type="text"],
+input[type="tel"],
+input[type="button"],
+input[type="submit"],
+.input-checkbox {
+    -webkit-appearance: none;
+    border-radius: 0;
+    box-shadow: unset;
+}

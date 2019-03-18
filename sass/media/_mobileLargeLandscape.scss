@@ -1,0 +1,41 @@
+@media screen and (max-width: $mobile-large-landscape) {
+
+    /* advantages */
+    #advantages {
+        .items-container {
+
+            .item {
+                width: 48%;
+
+                &:nth-child(-n+2) {
+                    margin-bottom: 70px;
+                }
+
+                .description {
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+
+    /* segments */
+    #segments {
+        .items-container {
+            padding: 0;
+        }
+
+        .item {
+            width: 48%;
+            margin-bottom: 20px;
+
+            figcaption {
+                height: 80px;
+                margin-top: 160px;
+
+                p {
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+}
