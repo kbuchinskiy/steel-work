@@ -42,7 +42,9 @@
                     display: none;
                 }
             }
-
+        }
+        nav.active .hamburger-callback[data-open-popup-id="contact-popup"] {
+            max-width: 230px;
         }
     }
 
@@ -220,17 +222,21 @@
         }
 
         .popup-content {
-            margin: 70px auto 60px;
+            margin: 80px auto 60px;
         }
 
         .popup-title {
-            font-size: 25px;
+            font-size: 23px;
             margin-bottom: 20px;
         }
 
         .popup-caption {
-            font-size: 14px;
+            font-size: 13px;
             margin-bottom: 30px;
+        }
+
+        .close-btn img {
+            width: 25px;
         }
 
         input,

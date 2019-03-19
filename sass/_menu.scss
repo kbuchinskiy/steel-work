@@ -13,15 +13,19 @@
         &:first-child {
             width: 72px;
         }
+
         &:nth-child(2) {
             width: 62px;
         }
+
         &:nth-child(3) {
             width: 98px;
         }
+
         &:nth-child(4) {
             width: 112px;
         }
+
         &:nth-child(5) {
             width: 85px;
             margin-right: 0;
@@ -70,6 +74,7 @@
                 background-color: #333;
                 justify-content: center;
                 align-items: center;
+                flex-flow: column;
                 z-index: 1000;
             }
         }
@@ -320,4 +325,15 @@
         transform: translate3d(0, -20px, 0) rotate(-270deg);
         transition-delay: 0.075s;
     }
+}
+
+// callback btn
+nav .hamburger-callback[data-open-popup-id="contact-popup"] {
+    display: none;
+    margin-bottom: 30px;
+}
+
+
+nav.active .hamburger-callback[data-open-popup-id="contact-popup"] {
+    display: block;
 }

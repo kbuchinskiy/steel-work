@@ -13,6 +13,10 @@ var openContactPopupBtnsCollection = document.querySelectorAll('[data-open-popup
 function openPopup(e, popupId) {
     e.preventDefault();
 
+    if (e.target.classList.contains('hamburger-callback')) {
+       document.querySelector('.js-menu').classList.remove('active');
+       document.querySelector('.hamburger').classList.remove('is-active');  
+    }
     document.body.scrollTop = 0;
     popupId.classList.add('active');
 }
