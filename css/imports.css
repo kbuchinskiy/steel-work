@@ -142,7 +142,7 @@ input[type="submit"],
   box-shadow: unset; }
 
 body {
-  font-family: OpenSans, Arial, Helvetica, sans-serif;
+  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
   color: #333333;
   font-size: 18px;
   line-height: 1.3; }
@@ -634,6 +634,7 @@ main .layout-wrapper {
         text-transform: uppercase;
         font-size: 16px;
         font-weight: bold;
+        letter-spacing: 0.4px;
         color: #1d1d20; }
       #technology1 .illustration-block .caption-container p {
         font-size: 14px;
@@ -1113,7 +1114,7 @@ main .layout-wrapper {
   .contacts__item:hover .contacts__link {
     color: #fd691c; }
 
-@media screen and (max-width: 1366px) {
+@media screen and (max-width: 1600px) {
   .layout-wrapper {
     max-width: 100%;
     padding: 0 3%; }
