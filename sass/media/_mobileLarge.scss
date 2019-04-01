@@ -44,7 +44,7 @@
             }
         }
         nav.active .hamburger-callback[data-open-popup-id="contact-popup"] {
-            max-width: 230px;
+            max-width: 70%;
         }
     }
 
@@ -61,7 +61,7 @@
 
     /* technology1Features */
     #technology1Features {
-        .items-container {
+        .items-container { 
             .item {
                 width: 100%;
                 margin-bottom: 30px;

@@ -29,6 +29,8 @@ $(document).ready(function () {
 
             document.addEventListener('click', (event) => {
                 if (event.target.classList.contains('menu__link')) {
+                    this._hamburger._element.classList.remove(IS_ACTIVE_CLASS);
+                    this._element.classList.remove(ACTIVE_CLASS);
                     return;
                 } else {
                     for (let item of this._menuItems._element) {
@@ -71,4 +73,12 @@ $(document).ready(function () {
         '.js-menu',
     );
 
+});
+
+$(document).on('click', 'a[href^="#"]', function (event) {
+    event.preventDefault();
+
+    $('html, body').animate({
+        scrollTop: $($.attr(this, 'href')).offset().top
+    }, 500);
 });
