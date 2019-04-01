@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="slick/slick-theme.css">
+    <link rel="stylesheet" href="slick/slick.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/imports.css">
+
+</head>
+
+<body>
+    <main>
+        <header class="header">
+            <div class="layout-wrapper">
+                <div class="header__inner container">
+                    <div class="logo">
+                        <a class="logo__link" href="index.html">
+                            <img class="logo__image" src="images/logo.png" alt="Steel Work">
+                        </a>
+                    </div>
+                    <nav class="menu menu--hamburger js-menu">
+                        <div class="hamburger hamburger--elastic js-menu__hamburger">
+                            <div class="hamburger-box">
+                                <div class="hamburger-inner"></div>
+                            </div>
+                        </div>
+                        <button class="theme-btn hamburger-callback" data-open-popup-id="contact-popup">Заказать звонок</button>
+                        <ul class="menu__list">
+                            <li class="menu__item"><a class="menu__link" href="#">Главная</a></li>
+                            <li class="menu__item"><a class="menu__link" href="#">Услуги</a></li>
+                            <li class="menu__item menu-item"><a class="menu__link" href="#">Продукция</a></li>
+                            <li class="menu__item menu-item"><a class="menu__link" href="#">О Компании</a></li>
+                            <li class="menu__item"><a class="menu__link" href="#">Контакты</a></li>
+                        </ul>
+                    </nav>
+                    <div class="callback"><a class="callback__link" href="tel:380564701400">
+                            +38 (056) 470-17-00</a>
+                        <button class="theme-btn" data-open-popup-id="contact-popup">Заказать звонок</button>
+                    </div>
+                    <div class="banner">
+                        <div class="company-name">
+                            <h1>Биметалл SWIP</h1>
+                            <h4>Износостойкие листы производства Steel Work</h4>
+                        </div>
+                        <div class="rewards">
+                            <p>Коллективный член Академии <br>горных наук Украины</p>
+                            <img src="images/reward1.png" alt="Изображение организации">
+                            <img src="images/reward2.png" alt="Изображение организации">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section id="technology1">
+            <div class="layout-wrapper">
+                <h2 class="section-title">Биметалл SWIP по технологии наплавки</h2>
+                <div class="content-wrapper">
+                    <div class="description-block">
+                        <p class="description">
+                            Steel Work Innovation Plate – это двухслойный металлический материал,
+                            что представляет собой единое целое. Лист состоит из двух различных
+                            металлов, это могут быть стали и их сплавы, прочно соединенных между
+                            собой по всей плоскости соприкосновения.
+                            <br>
+                            <br>
+                            В биметалле, слои имеют различные функции и называются – основной
+                            и наплавленный. Основной слой принимает на себя механические нагрузки,
+                            наплавленный слой имеет высокую износостойкость и выполняет защитную
+                            функцию.
+                        </p>
+                        <button class="theme-btn" id="getQuiz" data-action="get-quiz">Получить опросный лист</button>
+                    </div>
+                    <div class="illustration-block">
+                        <figure>
+                            <img src="images/layers.png" alt="Изображения листьев металла">
+                            <div class="caption-container" data-caption-id="1">
+                                <div class="hidden-content">
+                                    <h4>Основной слой</h4>
+                                    <p>принимает на себя <br>механические нагрузки</p>
+                                </div>
+                                <button class="toggle-caption-btn"></button>
+                            </div>
+                            <div class="caption-container" data-caption-id="2">
+                                <div class="hidden-content">
+                                    <h4>Наплавленный слой</h4>
+                                    <p>выполняет защитную <br>функцию</p>
+                                </div>
+                                <button class="toggle-caption-btn"></button>
+                            </div>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="technology1Features">
+            <div class="layout-wrapper">
+                <h2 class="section-title">Особенности производства листов SWIP по технологии наплавки</h2>
+                <p class="section-description">
+                    Максимальная износостойкость достигается за счет применения собственной запатентованной
+                    технологии производства, которая подразумевает полную автоматизацию процесса наплавки, позволяющую
+                    контролировать все его параметры: величину сварочного тока, напряжение на дуге, вылет электрода,
+                    стабильность
+                    скорости наплавки, температурный режим наплавляемого слоя, скорость поперечного перемещения
+                    электродов.
+                </p>
+                <div class="items-container">
+                    <div class="item">
+                        <figure>
+                            <img src="images/product-placeholder.png" alt="">
+                            <figcaption>
+                                <h4>Основной слой</h4>
+                                <p>Основной слой биметалла может
+                                    производиться как из обычной
+                                    низкоуглеродистой стали, так и из
+                                    жаропрочной стали. На него
+                                    роботизированной порошковой</p>
+                                <a href="#" class="read-more-btn">Читать дальше</a>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="item">
+                        <figure>
+                            <img src="images/product-placeholder.png" alt="">
+                            <figcaption>
+                                <h4>Наплавленный слой</h4>
+                                <p>Наплавленный слой может содержать
+                                    карбиды, а также карбобориды,
+                                    нитриды железа и легирующих
+                                    элементов. В процессе наплавки
+                                    используются материалы как</p>
+                                <a href="#" class="read-more-btn">Читать дальше</a>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="item">
+                        <figure>
+                            <img src="images/product-placeholder.png" alt="">
+                            <figcaption>
+                                <h4>Биметаллический лист SWIP</h4>
+                                <p>Выбрать требуемого состава,
+                                    позволяет достичь оптимального
+                                    показателя твердости и максимальной
+                                    рабочей температуры. Характеристики
+                                    зависят от условий работы изделия,</p>
+                                <a href="#" class="read-more-btn">Читать дальше</a>
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+                <p class="section-note">
+                    Смотрите полный каталог биметаллических листов SWIP стандартных размеров по технологии наплавки
+                </p>
+                <button class="theme-btn" data-action="open-catalog">смотреть каталог</button>
+            </div>
+        </section>
+        <section id="technology2">
+            <div class="layout-wrapper">
+                <h2 class="section-title">Биметалл SWIP по технологии сварки взрывом</h2>
+                <p class="section-description">
+                    Совместно с Институтом электросварки им. Е.О. Патона был разработан и реализован совместный проект
+                    по производству
+                    биметалла, который добывается импульсным методом. В данном виде биметаллических листов прочностную
+                    и механическую
+                    нагрузки несет основной слой из недорогих сталей и сплавов, а плакирующий слой из нержавеющих
+                    сталей, титана, латуни,
+                    циркония и других сплавов выполняет функцию защиты от воздействия агрессивных сред, теплового
+                    износа и прочих факторов.
+                </p>
+                <div class="content-wrapper">
+                    <div class="illustration-block">
+                        <figure>
+                            <img class="frame" src="images/frame1.png" alt="Изображения листьев металла">
+                            <figcaption>
+                                Импульсный метод получения
+                                многослойных металлов является
+                                перспективным технологическим
+                                процессом, позволяющим получать
+                                заготовки и изделия различных
+                                размеров и разнообразных
+                                композиций металлов и сплавов.
+                            </figcaption>
+                            <img class="line" src="images/line1.png" alt="Линия">
+                        </figure>
+                    </div>
+                    <div class="description-block">
+
+                        <div id="verticalSlider">
+                            <div>
+                                <p>
+                                    Позволяет изготовить детали и оборудование, которые
+                                    невозможно производить традиционными методами
+                                </p>
+                            </div>
+
+                            <div>
+                                <p>
+                                    Позволяет изготовить детали и оборудование, которые
+                                    невозможно производить традиционными методами
+                                </p>
+                            </div>
+
+                            <div>
+                                <p>
+                                    Позволяет изготовить детали и оборудование, которые
+                                    невозможно производить традиционными методами
+                                </p>
+                            </div>
+
+                        </div>
+
+                        <p class="text-2">
+                            Смотрите полный каталог биметаллических листов SWIP
+                            стандартных размеров по технологии сварки взрывом
+                        </p>
+                        <button class="theme-btn" data-action="open-catalog">смотреть каталог</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="responsibilities">
+            <div class="layout-wrapper">
+                <h2 class="section-title">Какие задачи решает биметалл SWIP?</h2>
+                <p class="section-description">
+                    Преимуществом двуслойного металла является возможность изготовления из него готовых изделий
+                    практически
+                    любой формы, с учётом вальцовки и гибки. Сборка, соединение и закрепление биметаллических изделий
+                    на защищаемой
+                    поверхности производится либо с помощью сварки, либо с помощью болтовых соединений, шпилек и т. д.
+                </p>
+                <div class="items-container">
+                    <div class="item">
+                        <figure>
+                            <img src="images/icon1.png" alt="Иконка">
+                            <figcaption>
+                                Защита оборудования<br>
+                                от любого вида износа
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="item">
+                        <figure>
+                            <img src="images/icon2.png" alt="Иконка">
+                            <figcaption>
+                                Увеличение срока службы<br>
+                                оборудования в 4 раза
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="item">
+                        <figure>
+                            <img src="images/icon3.png" alt="Иконка">
+                            <figcaption>
+                                Уменьшение веса<br>
+                                футеровки до 50%
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="item">
+                        <figure>
+                            <img src="images/icon4.png" alt="Иконка">
+                            <figcaption>
+                                Сокращение затрат на ремонтные<br>
+                                работы и обслуживание
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="item">
+                        <figure>
+                            <img src="images/icon5.png" alt="Иконка">
+                            <figcaption>
+                                Уменьшение операционных<br>
+                                затрат на содержание оборудования
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="item">
+                        <figure>
+                            <img src="images/icon6.png" alt="Иконка">
+                            <figcaption>
+                                Снижение себестоимости<br>
+                                продукции
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="item">
+                        <figure>
+                            <img src="images/icon7.png" alt="Иконка">
+                            <figcaption>
+                                Повышение производительности<br>
+                                оборудования
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="item">
+                        <figure>
+                            <img src="images/icon8.png" alt="Иконка">
+                            <figcaption>
+                                Отсутствие длительных<br>
+                                простоев производства
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="item">
+                        <figure>
+                            <img src="images/icon9.png" alt="Иконка">
+                            <figcaption>
+                                Отсутствие необходимости в<br>
+                                приобретении нового оборудования
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="advantages">
+            <div class="layout-wrapper">
+                <h2 class="section-title">Преимущества биметалла SWIP над другими видами стали</h2>
+                <p class="section-description">
+                    Сравнительные металлографические исследования были проведены независимой лабораторией.
+                    Именно поэтому мы уверены в своей продукции и берем на себя ответственность за безаварийную
+                    работу отремонтированного и восстановленного оборудования в течении гарантийного срока.
+                </p>
+                <div class="items-container">
+                    <div class="item">
+
+                        <div class="number-circle"><span>1</span></div>
+                        <p class="description">
+                            В 20 раз выше стойкость,
+                            чем у низколегированных
+                            сталей
+                        </p>
+                    </div>
+                    <div class="item">
+
+                        <div class="number-circle"><span>2</span></div>
+                        <p class="description">
+                            В 5 раз выше стойкость,
+                            чем у брони 110Г13,
+                            HARDOX
+                        </p>
+                    </div>
+                    <div class="item">
+
+                        <div class="number-circle"><span>3</span></div>
+                        <p class="description">
+                            Уменьшение толщины
+                            и, соответственно, – веса
+                            футеровки
+                        </p>
+                    </div>
+                    <div class="item">
+
+                        <div class="number-circle"><span>4</span></div>
+                        <p class="description">
+                            Плотное сплавление металла
+                            наплавки между валками,
+                            слоями и металлом основы
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="graph">
+            <div class="layout-wrapper">
+                <h2 class="section-title">Сравнение плит SWIP</h2>
+                <p class="section-description">
+                    с основными марками стали по шкале Бринелля
+                </p>
+                <div class="bar js-bar" data-max-value="800">
+                    <div class="bar__decor">
+                        <p class="axis-caption axis-caption-1">Показатель прочности</p>
+                        <p class="axis-caption axis-caption-2">Виды сталей</p>
+                        <svg class="bar__icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                            width="10" height="12" viewBox="0 0 10 12">
+                            <defs>
+                                <path id="1c6ma" d="M279.995 3210.991l-4.995-2.146-4.995 2.146 4.995-11.984z" />
+                            </defs>
+                            <g>
+                                <g transform="translate(-270 -3199)">
+                                    <use fill="#333" xlink:href="#1c6ma" />
+                                </g>
+                            </g>
+                        </svg>
+                        <div class="bar__decor-item"></div>
+                        <div class="bar__decor-item"></div>
+                        <div class="bar__decor-item"></div>
+                        <div class="bar__decor-item"></div>
+                        <svg class="bar__icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                            width="10" height="12" viewBox="0 0 10 12">
+                            <defs>
+                                <path id="1c6ma" d="M279.995 3210.991l-4.995-2.146-4.995 2.146 4.995-11.984z" />
+                            </defs>
+                            <g>
+                                <g transform="translate(-270 -3199)">
+                                    <use fill="#333" xlink:href="#1c6ma" />
+                                </g>
+                            </g>
+                        </svg>
+                    </div>
+                    <div class="bar__inner"></div>
+                </div>
+            </div>
+        </section>
+        <section id="question">
+            <div class="layout-wrapper">
+                <h2 class="section-title">Желаете задать вопрос эксперту?</h2>
+                <p class="section-description">
+                    Заполните форму ниже и с вами свяжется специалист, закрепленный за вашим регионом.
+                </p>
+                <form class="theme-form" onsubmit="event.preventDefault()">
+                    <div class="items-container">
+                        <div class="item"><input type="text" name="name" placeholder="Имя" required></div>
+                        <div class="item"><input type="tel" name="phone" placeholder="Телефон" required></div>
+                        <div class="item">
+                            <select>
+                                <option selected>Выберите страну</option>
+                                <option>Украина</option>
+                                <option>Россия</option>
+                            </select>
+                        </div>
+                        <div class="item">
+                            <input class="theme-btn" type="submit" value="ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <section id="segments">
+            <div class="layout-wrapper">
+                <h2 class="section-title">В каких сферах применяются
+                    биметаллические листы SWIP?</h2>
+                <p class="section-description">
+                    Области применения биметалла самые разные. Данный материал позволет предприятиям защитить
+                    производственное оборудование или оборудование на инжиниринговом обслуживании, подвергшееся износу,
+                    и нуждающееся в увеличении срока эксплуатации. Биметалл активно используется при изготовлении
+                    реакторов, колон, теплообменного оборудования и различных ёмкостей.
+                </p>
+                <div class="items-container">
+                    <div class="item">
+                        <figure>
+                            <img src="images/segment1.png" alt="Изображение сегмента">
+                            <figcaption>
+                                <p>Горнодобывающая промышленость</p>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="item">
+                        <figure>
+                            <img src="images/segment2.png" alt="Изображение сегмента">
+                            <figcaption>
+                                <p>Металлургическая промышленость</p>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="item">
+                        <figure>
+                            <img src="images/segment3.png" alt="Изображение сегмента">
+                            <figcaption>
+                                <p>Цементная промышленость</p>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="item">
+                        <figure>
+                            <img src="images/segment4.png" alt="Изображение сегмента">
+                            <figcaption>
+                                <p>Пищевая промышленость</p>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="item">
+                        <figure>
+                            <img src="images/segment5.png" alt="Изображение сегмента">
+                            <figcaption>
+                                <p>Химическая промышленость</p>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="item">
+                        <figure>
+                            <img src="images/segment6.png" alt="Изображение сегмента">
+                            <figcaption>
+                                <p>Энергетическая промышленость</p>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="item">
+                        <figure>
+                            <img src="images/segment7.png" alt="Изображение сегмента">
+                            <figcaption>
+                                <p>Портовое хозяйство</p>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="item">
+                        <figure>
+                            <img src="images/segment8.png" alt="Изображение сегмента">
+                            <figcaption>
+                                <p>Угольная промышленость</p>
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="achievements">
+            <div class="layout-wrapper">
+                <h2 class="section-title">Результаты наших клиентов</h2>
+                <p class="section-description">
+                    За 12 лет своего существования компания накопила бесценный опыт в области повышения ресурса
+                    технологического оборудования и зарекомендовала себя как надежный партнер. Экспертные знания и
+                    навыки
+                    специалистов компании позволили нашим клиентам сделать производство более эффективным и успешным.
+                </p>
+                <div id="slider" class="regular slider">
+                    <div>
+                        <figure>
+                            <img class="cover-img" src="images/achievement1.png" alt="Фоновое изображение">
+                            <img class="logo" src="images/company-logo.png" alt="Логотип компании">
+                            <figcaption>Череповецкий металлургический
+                                комбинат увеличил межремонтный
+                                период в 4 раза за счет установки
+                                элементов аспирационной системы,
+                                изготовленных из биметаллических
+                                листов SWIP
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div>
+                        <figure>
+                            <img class="cover-img" src="images/achievement2.png" alt="Фоновое изображение">
+                            <img class="logo" src="images/company-logo.png" alt="Логотип компании">
+                            <figcaption>Череповецкий металлургический
+                                комбинат увеличил межремонтный
+                                период в 4 раза за счет установки
+                                элементов аспирационной системы,
+                                изготовленных из биметаллических
+                                листов SWIP
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div>
+                        <figure>
+                            <img class="cover-img" src="images/achievement3.png" alt="Фоновое изображение">
+                            <img class="logo" src="images/company-logo.png" alt="Логотип компании">
+                            <figcaption>Череповецкий металлургический
+                                комбинат увеличил межремонтный
+                                период в 4 раза за счет установки
+                                элементов аспирационной системы,
+                                изготовленных из биметаллических
+                                листов SWIP
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div>
+                        <figure>
+                            <img class="cover-img" src="images/achievement1.png" alt="Фоновое изображение">
+                            <img class="logo" src="images/company-logo.png" alt="Логотип компании">
+                            <figcaption>Череповецкий металлургический
+                                комбинат увеличил межремонтный
+                                период в 4 раза за счет установки
+                                элементов аспирационной системы,
+                                изготовленных из биметаллических
+                                листов SWIP
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div>
+                        <figure>
+                            <img class="cover-img" src="images/achievement2.png" alt="Фоновое изображение">
+                            <img class="logo" src="images/company-logo.png" alt="Логотип компании">
+                            <figcaption>Череповецкий металлургический
+                                комбинат увеличил межремонтный
+                                период в 4 раза за счет установки
+                                элементов аспирационной системы,
+                                изготовленных из биметаллических
+                                листов SWIP
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="map">
+            <div class="layout-wrapper">
+                <h2 class="section-title">В каких странах мы работаем?</h2>
+                <p class="section-description">
+                    Использование в своей деятельности передовых технологий и последних научных разработок
+                    позволило нам в короткие сроки выйти на международный рынок. Сегодня наши клиенты находятся
+                    в более чем 10 странах по всему миру, и география постоянно расширяется.
+                </p>
+                <img class="map" src="images/map.png" alt="Изображение карты">
+            </div>
+        </section>
+        <section id="contact">
+            <div class="layout-wrapper">
+                <h2 class="section-title">Желаете обсудить условия работы?</h2>
+                <p class="section-description">
+                    Жмите на кнопку ниже и с вами свяжется специалист, закрепленный за вашим регионом.
+                </p>
+                <button class="theme-btn" data-open-popup-id="contact-popup">Связаться с экспертом</button>
+            </div>
+        </section>
+        <footer class="footer">
+            <div class="footer__inner container">
+                <p class="slogan">Для нас не существует проблем!<br>
+                    Мы работаем, чтобы ваш бизнес<br>
+                    стал еще более успешным!
+                </p>
+                <nav class="menu menu--footer">
+                    <ul class="menu__list">
+                        <li class="menu__item"><a class="menu__link" href="#">Главная</a></li>
+                        <li class="menu__item"><a class="menu__link" href="#">Услуги</a></li>
+                        <li class="menu__item menu-item"><a class="menu__link" href="#">Продукция</a></li>
+                        <li class="menu__item menu-item"><a class="menu__link" href="#">О Компании</a></li>
+                        <li class="menu__item"><a class="menu__link" href="#">Контакты</a></li>
+                    </ul>
+                </nav>
+                <address class="contacts">
+                    <ul class="contacts__list">
+                        <li class="contacts__item"><span>тел: </span><a class="contacts__link" href="tel:+380564701700">+38
+                                (056) 470-17-00</a></li>
+                        <li class="contacts__item"><span>факс: </span><a class="contacts__link" href="#">+38 (056)
+                                470-17-01</a></li>
+                        <li class="contacts__item"><span>e-mail: </span><a class="contacts__link" href="mailto:info@steel-work.net">info@steel-work.net</a></li>
+                    </ul>
+                </address>
+            </div>
+        </footer>
+    </main>
+
+    <div class="popup-overlay" id="contactPopup">
+        <div class="popup">
+            <div class="close-btn">
+                <img src="images/close-button.svg" alt="Закрыть окно">
+            </div>
+            <div class="popup-content">
+                <div class="popup-title">Заполните все поля</div>
+                <div class="popup-caption">И с вами в ближайшее время свяжется инженер,
+                    закрепленный за вашим регионом</div>
+
+                <form class="theme-form">
+                    <div class="items-container">
+                        <div class="item"><input type="text" name="name" placeholder="Имя" required></div>
+                        <div class="item"><input type="tel" name="phone" placeholder="Телефон" required></div>
+                        <div class="item">
+                            <select>
+                                <option selected>Выберите страну</option>
+                                <option>Украина</option>
+                                <option>Россия</option>
+                            </select>
+                        </div>
+                        <div class="item">
+                            <input class="theme-btn" type="submit" value="ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="popup-overlay" id="thanksPopup">
+        <div class="popup">
+            <div class="close-btn">
+                <img src="images/close-button.svg" alt="Закрыть окно">
+            </div>
+            <div class="popup-content">
+                <div class="popup-title">Спасибо
+                    <p>за заполненную форму!</p>
+                </div>
+                <div class="popup-caption">Специалист с вами свяжется в течении 15 минут.</div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <script src="slick/slick.min.js"></script>
+    <script src="js/sliders.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/bar.js"></script>
+    <script src="js/popups.js"></script>
+    <script src="js/product.js"></script>
+</body>
+
+</html>
