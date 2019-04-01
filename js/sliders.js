@@ -26,6 +26,8 @@ $(document).ready(function () {
         slidesToShow: 1,
         slidesToScroll: 1,
         verticalSwiping: true,
-        vertical: true
+        vertical: true,
+        autoplay: true,
+        autoplaySpeed: 2000
     });
 });

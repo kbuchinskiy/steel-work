@@ -36,6 +36,12 @@ button.theme-btn {
     font: bold 14px Montserrat;
     letter-spacing: 0.2px;
     color: #fff;
+
+    transition: background 0.3s;
+}
+
+.theme-btn:hover {
+    background-color: #d34b00;
 }
 
 .theme-form {
